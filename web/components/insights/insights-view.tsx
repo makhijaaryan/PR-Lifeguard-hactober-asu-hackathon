@@ -185,7 +185,7 @@ function Panel({
   );
 }
 
-const axisTick = { fill: "#71717a", fontSize: 12, fontFamily: "var(--font-geist-mono)" };
+const axisTick = { fill: "var(--muted-foreground)", fontSize: 12, fontFamily: "var(--font-geist-mono)" };
 
 function TierDonut({ rows }: { rows: HistoryRow[] }) {
   const counts = countTiers(rows);
@@ -195,7 +195,7 @@ function TierDonut({ rows }: { rows: HistoryRow[] }) {
       <ChartContainer config={tierConfig} className="aspect-square h-52 shrink-0">
         <PieChart>
           <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel nameKey="tier" />} />
-          <Pie data={data} dataKey="count" nameKey="tier" innerRadius={62} outerRadius={88} strokeWidth={2} stroke="#fff" isAnimationActive={false}>
+          <Pie data={data} dataKey="count" nameKey="tier" innerRadius={62} outerRadius={88} strokeWidth={2} stroke="var(--card)" isAnimationActive={false}>
             {data.map((d) => (
               <Cell key={d.tier} fill={d.fill} />
             ))}
@@ -242,10 +242,10 @@ function ScoreHistogram({ rows }: { rows: HistoryRow[] }) {
   return (
     <ChartContainer config={histConfig} className="h-52 w-full">
       <BarChart data={bins} margin={{ left: -20, right: 4, top: 8 }} barCategoryGap={4}>
-        <CartesianGrid vertical={false} stroke="#f4f4f5" />
+        <CartesianGrid vertical={false} stroke="var(--color-zinc-100)" />
         <XAxis dataKey="range" tickLine={false} axisLine={false} tick={axisTick} interval={0} fontSize={11} />
         <YAxis allowDecimals={false} tickLine={false} axisLine={false} tick={axisTick} width={40} />
-        <ChartTooltip cursor={{ fill: "#f4f4f5" }} content={<ChartTooltipContent />} />
+        <ChartTooltip cursor={{ fill: "var(--color-zinc-100)" }} content={<ChartTooltipContent />} />
         {TIERS.map((t, i) => (
           <Bar
             key={t}
@@ -277,14 +277,14 @@ function FailedChecks({ rows }: { rows: HistoryRow[] }) {
     <ChartContainer config={failConfig} className="w-full" style={{ height: data.length * 34 + 16 }}>
       <BarChart data={data} layout="vertical" margin={{ left: 0, right: 32, top: 4, bottom: 4 }} barCategoryGap={8}>
         <XAxis type="number" hide allowDecimals={false} />
-        <YAxis type="category" dataKey="check" tickLine={false} axisLine={false} width={170} tick={{ fill: "#3f3f46", fontSize: 13 }} />
-        <ChartTooltip cursor={{ fill: "#fafafa" }} content={<ChartTooltipContent hideLabel={false} />} />
+        <YAxis type="category" dataKey="check" tickLine={false} axisLine={false} width={170} tick={{ fill: "var(--color-zinc-700)", fontSize: 13 }} />
+        <ChartTooltip cursor={{ fill: "var(--color-zinc-50)" }} content={<ChartTooltipContent hideLabel={false} />} />
         <Bar
           dataKey="count"
-          fill="#a1a1aa"
+          fill="var(--color-zinc-400)"
           radius={[0, 3, 3, 0]}
           isAnimationActive={false}
-          label={{ position: "right", fill: "#71717a", fontSize: 12, fontFamily: "var(--font-geist-mono)" }}
+          label={{ position: "right", fill: "var(--muted-foreground)", fontSize: 12, fontFamily: "var(--font-geist-mono)" }}
         />
       </BarChart>
     </ChartContainer>

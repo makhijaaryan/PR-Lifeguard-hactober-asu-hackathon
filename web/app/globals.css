@@ -77,6 +77,7 @@
   --tier-review: #059669;
   --tier-info: #f59e0b;
   --tier-low: #e5484d;
+  --fail-text: #c8323a;
   --sidebar: #fafaf9;
   --sidebar-foreground: #18181b;
   --sidebar-primary: #18181b;
@@ -88,37 +89,56 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  /* Dark theme: near-black zinc, same single red accent */
+  --background: #0b0b0d;
+  --foreground: #f4f4f5;
+  --card: #131316;
+  --card-foreground: #f4f4f5;
+  --popover: #161619;
+  --popover-foreground: #f4f4f5;
+  --primary: #e5484d;
+  --primary-foreground: #ffffff;
+  --secondary: #1c1c20;
+  --secondary-foreground: #f4f4f5;
+  --muted: #1c1c20;
+  --muted-foreground: #a1a1aa;
+  --accent: #1c1c20;
+  --accent-foreground: #f4f4f5;
+  --destructive: #e5484d;
+  --border: #26262b;
+  --input: #2e2e34;
+  --ring: #e5484d;
+  --chart-1: #10b981;
+  --chart-2: #fbbf24;
+  --chart-3: #ef5b60;
+  --chart-4: #a1a1aa;
+  --chart-5: #71717a;
+  --tier-review: #10b981;
+  --tier-info: #fbbf24;
+  --tier-low: #ef5b60;
+  --sidebar: #0b0b0d;
+  --sidebar-foreground: #f4f4f5;
+  --sidebar-primary: #f4f4f5;
+  --sidebar-primary-foreground: #0b0b0d;
+  --sidebar-accent: #1c1c20;
+  --sidebar-accent-foreground: #f4f4f5;
+  --sidebar-border: #26262b;
+  --sidebar-ring: #e5484d;
+
+  /* Invert the zinc scale so every zinc-* utility (text-zinc-900, bg-zinc-50, ...) adapts */
+  --color-zinc-50: #17171a;
+  --color-zinc-100: #1c1c20;
+  --color-zinc-200: #2a2a2f;
+  --color-zinc-300: #3f3f46;
+  --color-zinc-400: #71717a;
+  --color-zinc-500: #8b8b94;
+  --color-zinc-600: #a1a1aa;
+  --color-zinc-700: #c4c4cc;
+  --color-zinc-800: #e4e4e7;
+  --color-zinc-900: #f4f4f5;
+  --color-emerald-700: #34d399;
+  --fail-text: #ff8a8e;
+  color-scheme: dark;
 }
 
 @layer base {

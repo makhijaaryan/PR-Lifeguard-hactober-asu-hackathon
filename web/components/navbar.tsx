@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { LogoMark } from "@/components/logo";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { Switch } from "@/components/ui/switch";
 import { TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
@@ -33,7 +34,7 @@ export function Navbar({ health, healthError, offline, onOfflineChange }: Props)
           <TabsTrigger value="insights" className="px-0.5">Insights</TabsTrigger>
         </TabsList>
 
-        <div className="ml-auto flex items-center gap-5">
+        <div className="ml-auto flex items-center gap-4">
           <div className="hidden items-center gap-3 font-mono text-xs text-muted-foreground md:flex">
             {healthError ? (
               <span className="flex items-center gap-1.5">
@@ -66,6 +67,7 @@ export function Navbar({ health, healthError, offline, onOfflineChange }: Props)
               Replays cached results for repos triaged before. Works with no internet or API keys.
             </TooltipContent>
           </Tooltip>
+          <ThemeToggle />
         </div>
       </div>
     </header>

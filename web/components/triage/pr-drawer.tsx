@@ -92,7 +92,7 @@ function DrawerBody({ pr }: { pr: PR }) {
                         ? "bg-emerald-600/10 text-emerald-700"
                         : neutral
                           ? "bg-zinc-100 text-zinc-500"
-                          : "bg-[#E5484D]/10 text-[#C8323A]")
+                          : "bg-[#E5484D]/10 text-(--fail-text)")
                     }
                   >
                     {flag.passed ? <Check className="size-3" /> : neutral ? <Minus className="size-3" /> : <X className="size-3" />}
@@ -130,7 +130,7 @@ function DrawerBody({ pr }: { pr: PR }) {
             <span
               className={
                 "mt-0.5 shrink-0 rounded px-1.5 py-px font-mono text-[11px] font-medium " +
-                (pr.description_matches_code.value ? "bg-emerald-600/10 text-emerald-700" : "bg-[#E5484D]/10 text-[#C8323A]")
+                (pr.description_matches_code.value ? "bg-emerald-600/10 text-emerald-700" : "bg-[#E5484D]/10 text-(--fail-text)")
               }
             >
               {pr.description_matches_code.value ? "YES" : "NO"}

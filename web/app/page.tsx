@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Footer } from "@/components/footer";
 import { LandingPreview } from "@/components/landing/preview";
 import { LogoMark } from "@/components/logo";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { TierDot } from "@/components/triage/results-summary";
 import { buttonVariants } from "@/components/ui/button";
 import type { PR, Tier } from "@/lib/api";
@@ -69,9 +70,12 @@ export default function Landing() {
             <a href="#scoring" className="hover:text-foreground">Scoring</a>
             <a href="#architecture" className="hover:text-foreground">Architecture</a>
           </nav>
-          <Link href="/app" className={cn(buttonVariants({ size: "lg" }), "ml-auto px-3.5")}>
-            Open the app <ArrowRight />
-          </Link>
+          <div className="ml-auto flex items-center gap-2">
+            <ThemeToggle />
+            <Link href="/app" className={cn(buttonVariants({ size: "lg" }), "px-3.5")}>
+              Open the app <ArrowRight />
+            </Link>
+          </div>
         </div>
       </header>
 

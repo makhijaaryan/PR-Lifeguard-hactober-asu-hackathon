@@ -131,7 +131,7 @@ function CheckBadge({ name, pr }: { name: CheckName; pr: PR }) {
               "inline-flex h-5 cursor-default items-center rounded-[5px] border px-1.5 text-[11px] font-medium",
               neutral
                 ? "border-zinc-200 bg-zinc-50 text-zinc-600"
-                : "border-[#E5484D]/25 bg-[#E5484D]/[0.06] text-[#C8323A]",
+                : "border-[#E5484D]/25 bg-[#E5484D]/[0.06] text-(--fail-text)",
             )}
           />
         }
