@@ -1,53 +1,35 @@
-"""Snowflake Cortex REST client: ask_llm(system_prompt, user_prompt) -> (text, model_used)."""
-import json
+"""OpenAI-compatible chat client: ask_llm(system_prompt, user_prompt) -> (text, model_used).
+
+Works with Groq, OpenRouter, Together, etc. Settings come from [llm] in
+.streamlit/secrets.toml. Stateless, so it is safe to call from several threads.
+"""
+import time
 
 import requests
 
 from engine.config import load_config  # reads .streamlit/secrets.toml (tomllib, toml fallback)
 
 TIMEOUT = 60
+RATE_LIMIT_WAIT = 4  # seconds to wait before the single 429 retry
+MAX_RATE_LIMIT_WAIT = 15
 
 
 class LLMError(RuntimeError):
     pass
 
 
-def _parse_response(resp):
-    """Return text from either a normal JSON body or an SSE stream."""
-    ctype = resp.headers.get("Content-Type", "")
-    if "text/event-stream" in ctype:
-        parts = []
-        for raw in resp.iter_lines(decode_unicode=True):
-            if not raw or not raw.startswith("data:"):
-                continue
-            payload = raw[5:].strip()
-            if payload == "[DONE]":
-                break
-            try:
-                choice = json.loads(payload)["choices"][0]
-            except (ValueError, KeyError, IndexError):
-                continue
-            piece = (choice.get("delta") or choice.get("message") or {}).get("content")
-            if piece:
-                parts.append(piece)
-        return "".join(parts)
+def _post(url, headers, body, model):
     try:
-        return resp.json()["choices"][0]["message"]["content"]
-    except (ValueError, KeyError, IndexError) as e:
-        raise LLMError(f"Unexpected response shape: {resp.text[:300]}") from e
+        return requests.post(url, headers=headers, json=body, timeout=TIMEOUT)
+    except requests.Timeout as e:
+        raise LLMError(f"Timed out after {TIMEOUT}s calling model '{model}'") from e
+    except requests.RequestException as e:
+        raise LLMError(f"Network error calling LLM API: {e}") from e
 
 
 def _call(cfg, model, system_prompt, user_prompt):
-    host = cfg["host"].strip().rstrip("/")
-    if not host.startswith("http"):
-        host = "https://" + host
-    url = f"{host}/api/v2/cortex/inference:complete"
-    headers = {
-        "Authorization": f"Bearer {cfg['api_key']}",
-        "X-Snowflake-Authorization-Token-Type": "PROGRAMMATIC_ACCESS_TOKEN",
-        "Content-Type": "application/json",
-        "Accept": "application/json, text/event-stream",
-    }
+    url = cfg["base_url"].strip().rstrip("/") + "/chat/completions"
+    headers = {"Authorization": f"Bearer {cfg['api_key']}", "Content-Type": "application/json"}
     body = {
         "model": model,
         "messages": [
@@ -56,19 +38,23 @@ def _call(cfg, model, system_prompt, user_prompt):
         ],
         "stream": False,
     }
-    try:
-        resp = requests.post(url, headers=headers, json=body, timeout=TIMEOUT, stream=True)
-    except requests.Timeout as e:
-        raise LLMError(f"Timed out after {TIMEOUT}s calling model '{model}'") from e
-    except requests.RequestException as e:
-        raise LLMError(f"Network error calling Cortex: {e}") from e
+    resp = _post(url, headers, body, model)
+    if resp.status_code == 429:  # rate limited: wait once, then retry
+        try:
+            wait = float(resp.headers.get("Retry-After", RATE_LIMIT_WAIT))
+        except ValueError:
+            wait = RATE_LIMIT_WAIT
+        time.sleep(min(max(wait, 1), MAX_RATE_LIMIT_WAIT))
+        resp = _post(url, headers, body, model)
     if resp.status_code != 200:
-        hint = {401: " (bad/expired PAT?)", 403: " (role lacks Cortex access?)",
-                404: " (check host or model name)", 429: " (rate limited)"}.get(resp.status_code, "")
-        if "Network policy is required" in resp.text:
-            hint = " (Snowflake needs a network policy on this user before a PAT works; see README/admin fix)"
-        raise LLMError(f"Cortex HTTP {resp.status_code} for model '{model}'{hint}: {resp.text[:300]}")
-    text = _parse_response(resp).strip()
+        hint = {400: " (bad request / unknown model?)", 401: " (bad or expired API key?)",
+                403: " (key lacks access to this model?)", 404: " (check base_url or model name)",
+                429: " (rate limited, even after retry)"}.get(resp.status_code, "")
+        raise LLMError(f"LLM HTTP {resp.status_code} for model '{model}'{hint}: {resp.text[:300]}")
+    try:
+        text = (resp.json()["choices"][0]["message"]["content"] or "").strip()
+    except (ValueError, KeyError, IndexError, TypeError) as e:
+        raise LLMError(f"Unexpected response shape from '{model}': {resp.text[:300]}") from e
     if not text:
         raise LLMError(f"Model '{model}' returned an empty response")
     return text
@@ -76,10 +62,10 @@ def _call(cfg, model, system_prompt, user_prompt):
 
 def ask_llm(system_prompt, user_prompt):
     """Call the main model; on failure retry once with the fallback. Returns (text, model_used)."""
-    cfg = load_config()["snowflake"]
-    for key in ("host", "api_key", "model"):
+    cfg = load_config()["llm"]
+    for key in ("base_url", "api_key", "model"):
         if not cfg.get(key):
-            raise LLMError(f"Missing snowflake.{key} in .streamlit/secrets.toml")
+            raise LLMError(f"Missing llm.{key} in .streamlit/secrets.toml")
     main, fallback = cfg["model"], cfg.get("fallback_model")
     try:
         return _call(cfg, main, system_prompt, user_prompt), main
