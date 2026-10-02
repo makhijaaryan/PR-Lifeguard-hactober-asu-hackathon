@@ -2,6 +2,8 @@
 
 Open-source maintainers are drowning in low-effort pull requests. PR Lifeguard ranks a repo's open PRs by **effort**, not by whether AI was used, explains every score, and drafts a kind reply for each one.
 
+**License: MIT** (see [LICENSE](LICENSE)) · Agent Skill: [`skills/pr-lifeguard/SKILL.md`](skills/pr-lifeguard/SKILL.md)
+
 ![Triage view](docs/screenshots/triage.jpg)
 
 | PR details and draft reply | Insights across runs |
@@ -37,6 +39,22 @@ The secrets file is gitignored and is the only place keys live.
 3. **LLM review** (`scorer.py`): an open-weight model reads the description, a diff excerpt and the contributing guide, then returns an effort score, a one-line reason, guideline issues, whether the description matches the code, and a polite draft reply. It is told to judge effort and fit, never whether AI was used, and never to claim anything it can't see in the diff.
 4. **Final score** = 50% rules + 50% LLM. Tiers: **Review first** (70+), **Needs info** (40–69), **Likely low-effort** (under 40).
 5. **Resilience:** on a rate limit the client switches models. If the LLM is unavailable, scoring falls back to the rule checks and says so in the reason. Storage falls back to SQLite.
+
+## Open-source AI
+
+Scoring uses [`openai/gpt-oss-120b`](https://huggingface.co/openai/gpt-oss-120b), an open-weight model released under the Apache 2.0 license, served through Groq's OpenAI-compatible API. The fallback, `qwen/qwen3.8-27b`, is open-weight too.
+
+The model layer is swappable. `llm.py` talks to any OpenAI-compatible `/chat/completions` endpoint, so changing `[llm]` in `.streamlit/secrets.toml` is enough to switch providers, including a fully local model with [Ollama](https://ollama.com):
+
+```toml
+[llm]
+base_url = "http://localhost:11434/v1"
+api_key = "ollama"          # any non-empty value; Ollama ignores it
+model = "gpt-oss:20b"
+fallback_model = "gpt-oss:20b"
+```
+
+The project itself is open source under the MIT license, and the scoring logic is packaged as an [Agent Skill](skills/pr-lifeguard/SKILL.md) so other agents can run PR triage the same way.
 
 ## Architecture
 
