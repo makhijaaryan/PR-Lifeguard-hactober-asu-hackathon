@@ -14,6 +14,7 @@ SECRETS_PATH = Path(__file__).resolve().parent.parent / ".streamlit" / "secrets.
 DEFAULTS = {
     "snowflake": {"model": "llama3.1-70b", "fallback_model": "mistral-large2", "schema": "PUBLIC"},
     "github": {},
+    "llm": {},
 }
 
 
@@ -37,6 +38,10 @@ def load_config():
         val = os.environ.get(f"SNOWFLAKE_{key.upper()}")
         if val:
             cfg["snowflake"][key] = val
+    for key in ("base_url", "api_key", "model", "fallback_model"):
+        val = os.environ.get(f"LLM_{key.upper()}")
+        if val:
+            cfg["llm"][key] = val
     if os.environ.get("GITHUB_TOKEN"):
         cfg["github"]["token"] = os.environ["GITHUB_TOKEN"]
     return cfg
@@ -46,7 +51,7 @@ def missing_keys(cfg=None):
     """List 'section.key' names that are required but empty (never returns values)."""
     cfg = cfg or load_config()
     required = {
-        "snowflake": ["host", "api_key", "model"],
+        "llm": ["base_url", "api_key", "model"],
         "github": ["token"],
     }
     return [f"{s}.{k}" for s, keys in required.items() for k in keys if not cfg[s].get(k)]
