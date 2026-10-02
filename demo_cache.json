@@ -1,22 +1,1705 @@
 {
-  "pallets/flask": {
-    "repo": "pallets/flask",
-    "run_id": "01bdf79c32ac",
-    "model_used": "none (rule checks only)",
-    "storage_backend": "Snowflake",
+  "firstcontributions/first-contributions": {
+    "repo": "firstcontributions/first-contributions",
+    "run_id": "44474eab3c73",
+    "model_used": "openai/gpt-oss-120b",
+    "storage_backend": "Local (fallback)",
     "prs": [
       {
-        "number": 5918,
-        "title": "automatic options as separate route",
-        "author": "davidism",
-        "url": "https://github.com/pallets/flask/pull/5918",
-        "final_score": 100,
+        "number": 125909,
+        "title": "Add Jitendra1419-UI to Contributors list",
+        "author": "Jitendra1419-UI",
+        "url": "https://github.com/firstcontributions/first-contributions/pull/125909",
+        "final_score": 60,
+        "tier": "Needs info",
+        "reason": "Adds a contributor entry but includes a large formatting diff and lacks a linked issue.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (918 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [
+          "Keep pull requests small. A pull request that has one file change is way easier to review than 20 files."
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "Based on the title and description, the change appears to add the contributor as described."
+        },
+        "draft_reply": "Thank you for adding yourself to the Contributors list! Could you please link this PR to an open issue or open a new one describing the change? Also, try to keep the diff limited to only the necessary additions to avoid large formatting changes. Looking forward to merging this soon."
+      },
+      {
+        "number": 125904,
+        "title": "Add miaoxin2003 to Contributors list",
+        "author": "miaoxin2003",
+        "url": "https://github.com/firstcontributions/first-contributions/pull/125904",
+        "final_score": 52,
+        "tier": "Needs info",
+        "reason": "The PR adds many entries to Contributors.md but includes limited explanation.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": false,
+            "note": "PR template left mostly blank."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Large diff (6670 lines), which can be hard to review in one PR."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [
+          "Pull request is very large; the contribution guide recommends keeping PRs small for easier review."
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "Based on the title and description, the changes appear to match the intended update to Contributors.md."
+        },
+        "draft_reply": "Thank you for adding yourself and others to the Contributors list! Could you please link this PR to a relevant issue and consider breaking the changes into smaller PRs to make review easier? Let us know if you need any guidance on how to split the updates."
+      },
+      {
+        "number": 125871,
+        "title": "First commit",
+        "author": "james20070516-cmyk",
+        "url": "https://github.com/firstcontributions/first-contributions/pull/125871",
+        "final_score": 52,
+        "tier": "Needs info",
+        "reason": "The contributor made the correct small change and filled out the standard checklist, but the automated checks flag it as a standard introductory commit without a linked issue.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Very small change (1 lines), such as a typo or README tweak."
+          },
+          "account_age_ok": {
+            "passed": false,
+            "note": "Account was under 30 days old when the PR was opened."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The file name (Contributors.md) and the standard checklist align with the typical pattern of a first-time contributor adding their name to the list."
+        },
+        "draft_reply": "Thanks for adding your name to the contributors list! This looks good to go. Have fun continuing your journey with open source."
+      },
+      {
+        "number": 125870,
+        "title": "Add jiang to Contributors list",
+        "author": "jiang0127-star",
+        "url": "https://github.com/firstcontributions/first-contributions/pull/125870",
+        "final_score": 50,
+        "tier": "Needs info",
+        "reason": "The contributor followed the standard first-contributions workflow and filled out the PR template, though the effort is minimal by nature of the task and they checked feedback boxes without providing the detailed notes requested by the template.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Very small change (2 lines), such as a typo or README tweak."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [
+          "Keep pull requests small (this is a single file change, which is actually good, but the check failed likely due to threshold; however, rule #3 says create new branches, and the PR size check failed as 'very small' which might refer to it being too trivial or just a strict automated flag. Wait, rule 4 says 'A pull request that has one file change is way easier to review', so small is good. The automated check 'size_ok' failed with 'Very small change'. This might be a misconfiguration or a strict rule against trivial changes, but the guide encourages small PRs. I will list the potential issue that they didn't actually add the feedback details requested in the checklist."
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "The file named Contributors.md aligns with the title 'Add jiang to Contributors list', and the size matches adding a name."
+        },
+        "draft_reply": "Thanks for your contribution! I noticed you checked the boxes for improvements and errors in the description, but the details seem to be missing. Could you please add those notes in the description field? This helps us improve the tutorial for others."
+      },
+      {
+        "number": 125886,
+        "title": "Add prakhar Dubey to contributors",
+        "author": "prakharDubey22",
+        "url": "https://github.com/firstcontributions/first-contributions/pull/125886",
+        "final_score": 45,
+        "tier": "Needs info",
+        "reason": "The PR makes a small addition with minimal explanation.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": false,
+            "note": "PR template left mostly blank."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (39 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [
+          "Missing linked issue reference"
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "Based on title and file change, the description appears to match the code change."
+        },
+        "draft_reply": "Thank you for adding your name to the Contributors list! Could you please link this PR to a relevant issue or create one if it doesn't exist? This helps us track the change and keeps the contribution workflow clear."
+      },
+      {
+        "number": 125875,
+        "title": "my first commit",
+        "author": "Ally5399",
+        "url": "https://github.com/firstcontributions/first-contributions/pull/125875",
+        "final_score": 45,
+        "tier": "Needs info",
+        "reason": "The PR adds a single line and includes a brief description, showing modest effort.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": false,
+            "note": "PR template left mostly blank."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Very small change (1 lines), such as a typo or README tweak."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "No detailed diff is available, but the description and the changed file suggest the change is consistent."
+        },
+        "draft_reply": "Thank you for your first contribution! Could you please link this PR to an existing issue or create a new one so we can track it? Also, please make sure the PR template is filled out and that the changes are made on a separate branch. Let us know if you need any help."
+      },
+      {
+        "number": 125866,
+        "title": "charlieleexz",
+        "author": "charlieleexz",
+        "url": "https://github.com/firstcontributions/first-contributions/pull/125866",
+        "final_score": 45,
+        "tier": "Needs info",
+        "reason": "The contributor followed the standard first-contributions workflow by adding their name to the list and filling out the PR template checklist, which is expected effort for this specific type of task, though the change itself is minimal.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": false,
+            "note": "PR template left mostly blank."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Very small change (2 lines), such as a typo or README tweak."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [
+          "Don't make changes in Readme.md",
+          "Keep pull requests small. A pull request that has one file change is way easier to review than 20 files."
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "The PR modifies Contributors.md, which is the standard file for adding a new contributor's name in the first-contributions repo, and the description consists of the standard template checklist, so it is consistent."
+        },
+        "draft_reply": "Thanks for your contribution, @charlieleexz! It's great to see you've gotten familiar with the pull request process. Since this is a docs-only change to add your name, the review should be quick. Please ensure no other files were unintentionally modified (like the Readme.md) and that your branch is up to date with main before merging."
+      },
+      {
+        "number": 125892,
+        "title": "my first contribution",
+        "author": "froggy-tsai",
+        "url": "https://github.com/firstcontributions/first-contributions/pull/125892",
+        "final_score": 40,
+        "tier": "Needs info",
+        "reason": "The PR makes a very small change with minimal explanation, showing partial effort.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": false,
+            "note": "PR template left mostly blank."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Very small change (2 lines), such as a typo or README tweak."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The generic description aligns with the tiny change to Contributors.md."
+        },
+        "draft_reply": "Thank you for your first contribution! Could you please link this PR to a relevant issue (or create one) and fill out the checklist in the description so we have the necessary context? Once that's done, we'll be happy to review and merge it."
+      },
+      {
+        "number": 125917,
+        "title": "add dhmgiannakas-dev contribution",
+        "author": "dhmgiannakas-dev",
+        "url": "https://github.com/firstcontributions/first-contributions/pull/125917",
+        "final_score": 38,
+        "tier": "Likely low-effort",
+        "reason": "The PR makes only a few line changes with minimal explanation, showing limited visible effort.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Very small change (3 lines), such as a typo or README tweak."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Based on the title and changed files, the description appears to reflect the modifications."
+        },
+        "draft_reply": "Thank you for your contribution and welcome to the project! Could you please link this PR to an existing issue or create a new one describing the purpose of the changes? This helps us track the work and ensures it aligns with our roadmap."
+      },
+      {
+        "number": 125868,
+        "title": "HI HI",
+        "author": "Nixon914",
+        "url": "https://github.com/firstcontributions/first-contributions/pull/125868",
+        "final_score": 38,
+        "tier": "Likely low-effort",
+        "reason": "The contribution is minimal with only a couple of line changes and an largely empty description.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": false,
+            "note": "PR template left mostly blank."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Very small change (2 lines), such as a typo or README tweak."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [
+          "Link to a relevant issue (the PR does not reference any issue)"
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "Based on the title and description, the change to Contributors.md appears consistent, though the exact diff is not visible."
+        },
+        "draft_reply": "Thank you for your contribution! Could you please link this PR to a related issue or provide a brief reference so we can understand the context? Also, it would be helpful to fill out the checklist in the description to let us know what you tested or experienced. Let us know if you need any guidance."
+      },
+      {
+        "number": 125872,
+        "title": "My first contribution",
+        "author": "joeuser-max",
+        "url": "https://github.com/firstcontributions/first-contributions/pull/125872",
+        "final_score": 35,
+        "tier": "Likely low-effort",
+        "reason": "The PR modifies only the checklists in the description with no meaningful code changes and fails to follow the specific guideline against changing Readme.md if that file were involved, but primarily it is a minimal first-contribution placeholder that lacks a linked issue.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": false,
+            "note": "PR template left mostly blank."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (7 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [
+          "Don't make changes in Readme.md",
+          "Keep pull requests small (though this is small, the intent is unclear without a linked issue)",
+          "Look for issues that maintainers have labeled as 'help wanted' or 'good first issue'"
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "The diff is tiny and touches Contributors.md, which is standard for this repo's onboarding flow; the description matches a first-contribution checklist."
+        },
+        "draft_reply": "Thanks for taking the time to contribute! It looks like this is your first pull request, so we're excited to have you. Could you please link this PR to the specific issue you're addressing, or describe the change you're making in more detail? This will help us review it more easily."
+      },
+      {
+        "number": 125874,
+        "title": "first-contributions",
+        "author": "ravenclue",
+        "url": "https://github.com/firstcontributions/first-contributions/pull/125874",
+        "final_score": 28,
+        "tier": "Likely low-effort",
+        "reason": "The PR is a minimal one-line addition to Contributors.md, which is the specific and expected change for this tutorial repository.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": false,
+            "note": "PR template left mostly blank."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Very small change (2 lines), such as a typo or README tweak."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The change to Contributors.md aligns with the purpose of the first-contributions tutorial, where adding a name is the primary task."
+        },
+        "draft_reply": "Thank you for completing the first-contributions tutorial! Your PR looks good and follows the expected format for this specific exercise. We appreciate you joining the community, and we hope you enjoy exploring other open-source projects in the future."
+      }
+    ],
+    "_limit": 12
+  },
+  "home-assistant/core": {
+    "repo": "home-assistant/core",
+    "run_id": "cb8565de61e6",
+    "model_used": "qwen/qwen3.8-27b",
+    "storage_backend": "Local (fallback)",
+    "prs": [
+      {
+        "number": 184049,
+        "title": "Add restart and reboot required triggers and conditions",
+        "author": "frenck",
+        "url": "https://github.com/home-assistant/core/pull/184049",
+        "final_score": 98,
         "tier": "Review first",
-        "reason": "Scored from rule checks only. All rule checks passed.",
+        "reason": "The PR is by an established member, includes a detailed technical description with specific behavioral nuances, depends on other PRs, and includes corresponding tests for all new triggers and conditions.",
         "rule_flags": {
           "links_issue": {
             "passed": true,
             "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (464 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The file names directly correspond to the described changes (trigger.py, condition.py, YAML schemas, and tests), and the description accurately reflects the code size and scope."
+        },
+        "draft_reply": "Thanks for this contribution, frenck! The description clearly explains the behavior and dependencies, which will help with the review process. I\u2019ll keep an eye on the linked PRs (#184046 and #184047) to ensure this can be merged in the right order."
+      },
+      {
+        "number": 184047,
+        "title": "Allow trigger platforms to mix legacy and new-style triggers",
+        "author": "frenck",
+        "url": "https://github.com/home-assistant/core/pull/184047",
+        "final_score": 88,
+        "tier": "Review first",
+        "reason": "The PR is small, focused, and includes both implementation changes and corresponding test updates, with a clear and detailed explanation of the logic.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (106 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [
+          "Ensure tests work",
+          "Create a Pull Request against the dev branch (inferred from target)"
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "The description accurately describes the changes to the trigger helper and the inclusion of tests."
+        },
+        "draft_reply": "Thank you for this contribution, @frenck! The changes look focused on enabling the coexistence of legacy and new-style triggers, and it is great to see the tests have been updated accordingly. Please ensure the PR is targeted at the `dev` branch as required by the contribution guide. If there are any specific behaviors you'd like highlighted for review, feel free to add them."
+      },
+      {
+        "number": 184078,
+        "title": "Clean up successful backup hooks after preparation failure",
+        "author": "kdon-cpu",
+        "url": "https://github.com/home-assistant/core/pull/184078",
+        "final_score": 85,
+        "tier": "Review first",
+        "reason": "The PR adds substantial code and tests with a clear explanation of the problem and solution.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (185 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Based on the summary, the changes to backup manager and tests appear consistent with the description."
+        },
+        "draft_reply": "Thank you for the thoughtful contribution! The changes to the backup manager and the added tests look solid and address the mixed\u2011result cleanup issue well. Could you confirm that all CI checks are passing and let us know if any documentation updates are needed?"
+      },
+      {
+        "number": 184072,
+        "title": "Stop traccar_server subscription loop when its task is cancelled",
+        "author": "costajohnt",
+        "url": "https://github.com/home-assistant/core/pull/184072",
+        "final_score": 85,
+        "tier": "Review first",
+        "reason": "Adds functional code changes with accompanying tests and a clear, detailed explanation.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (43 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Based on the title, description, and modified files, the changes appear to align with the described behavior."
+        },
+        "draft_reply": "Thank you for the contribution! The fix and the new tests look solid and address the subscription loop issue nicely. Could you confirm that the tests pass on all supported Python versions and on the dev branch CI? Once verified, we can move forward with merging."
+      },
+      {
+        "number": 184091,
+        "title": "Add diagnostics platform to SMTP",
+        "author": "tr4nt0r",
+        "url": "https://github.com/home-assistant/core/pull/184091",
+        "final_score": 82,
+        "tier": "Review first",
+        "reason": "The PR follows the correct structure (implementation, tests, snapshots), is reasonably sized, and the contributor is an established member of the project.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (81 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The title and description accurately reflect the file changes (adding diagnostics.py and corresponding tests)."
+        },
+        "draft_reply": "Thank you for adding diagnostics support to the SMTP integration. The PR structure and test coverage look good. I noticed the PR does not link to a specific issue or discussion, which is generally helpful for tracking feature requests; could you please add a link if one exists?"
+      },
+      {
+        "number": 184090,
+        "title": "Fluss+: don't fail the entry when a per-device status read fails",
+        "author": "igitur",
+        "url": "https://github.com/home-assistant/core/pull/184090",
+        "final_score": 82,
+        "tier": "Review first",
+        "reason": "The PR touches several components, adds tests, and includes a clear, detailed description of the fix.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (54 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The description aligns with the modified files and appears consistent."
+        },
+        "draft_reply": "Thank you for the contribution! The changes look solid and the added tests are helpful. Could you confirm that the PR is targeting the `dev` branch as required by the contribution guide? Once that's confirmed we can proceed with the review."
+      },
+      {
+        "number": 184066,
+        "title": "Add select platform to NeoPool",
+        "author": "svasek",
+        "url": "https://github.com/home-assistant/core/pull/184066",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "The contribution demonstrates high effort with a detailed technical explanation of logic nuances (e.g., register bitfield manipulation) and includes comprehensive tests.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Large diff (4262 lines), which can be hard to review in one PR."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [
+          "PR size is large (4262 lines changed), which may make review difficult and potentially violates general community best practices for smaller, focused changes."
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "The file list confirms the addition of the select platform and its tests, aligning perfectly with the description."
+        },
+        "draft_reply": "Thank you for this detailed contribution to the NeoPool integration; the explanation of the filtration mode logic and register handling is very helpful. Could you please link to the related issue or discussion where this feature was suggested? Additionally, given the size of the diff, it might be beneficial to ensure all changes are strictly scoped to the select platform implementation to facilitate easier review."
+      },
+      {
+        "number": 184050,
+        "title": "Update Matter sensor for cooling demand attributes",
+        "author": "lboue",
+        "url": "https://github.com/home-assistant/core/pull/184050",
+        "final_score": 79,
+        "tier": "Review first",
+        "reason": "The PR adds a new attribute, updates strings, and includes tests, showing clear and thoughtful work.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (42 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [
+          "Missing linked issue in PR description"
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "Based on title, description, and listed files, the changes appear to align with the PR purpose."
+        },
+        "draft_reply": "Thank you for the contribution! This adds useful cooling demand support and includes tests, which is great. Could you please link the related issue in the description so we can track it properly? Once that's added, we'll be able to move forward with the review."
+      },
+      {
+        "number": 184062,
+        "title": "Start MELCloud Home reauth on action auth errors",
+        "author": "erwindouna",
+        "url": "https://github.com/home-assistant/core/pull/184062",
+        "final_score": 78,
+        "tier": "Review first",
+        "reason": "The PR adds functional code, updates configuration files, and includes tests, showing clear effort.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (42 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [
+          "Missing linked issue reference in the PR description"
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "Based on the title and description, the changes appear to implement the described reauthentication behavior."
+        },
+        "draft_reply": "Thank you for the contribution! The changes look good and the added tests are helpful. Could you please link the related issue or provide an issue number in the description so we can track it properly? Once that's added, we'll be able to move forward with the review."
+      },
+      {
+        "number": 184065,
+        "title": "Add Daikin Onecta climate integration",
+        "author": "jwillemsen",
+        "url": "https://github.com/home-assistant/core/pull/184065",
+        "final_score": 75,
+        "tier": "Review first",
+        "reason": "The PR is a substantial, well-structured new integration with comprehensive tests and full adherence to the project's structural conventions, though the large size requires careful review.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Large diff (4260 lines), which can be hard to review in one PR."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [
+          "Ensure tests work",
+          "Read How to get faster PR reviews (best practices for PRs)"
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "The file list confirms the addition of the daikin_onecta integration including climate, config flow, coordinator, and comprehensive tests, which matches the description."
+        },
+        "draft_reply": "Thank you for submitting this detailed integration for Daikin Onecta! The scope is quite large, so please ensure that all local tests pass and that the specific issue or discussion linked in the description is clearly referenced to help the maintainers verify the requirements. Looking forward to reviewing the code."
+      },
+      {
+        "number": 184055,
+        "title": "Add Mijn Farmad Apotheek integration",
+        "author": "DaanVervacke",
+        "url": "https://github.com/home-assistant/core/pull/184055",
+        "final_score": 75,
+        "tier": "Review first",
+        "reason": "The PR introduces a complete new integration with comprehensive tests, proper file structure, and a detailed description of the functionality, though the size is large for a single PR.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Large diff (1968 lines), which can be hard to review in one PR."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [
+          "No linked issue found in the description",
+          "The PR touches generated files (.strict-typing, CODEOWNERS, mypy.ini, requirements_all.txt, homeassistant/generated/*) which are typically managed automatically by the CI or core maintainers rather than manually by contributors in the initial submission."
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "The file list matches the description of a new integration including config flow, services, and tests. The description is truncated at 'My main ', indicating the author may have unintentionally left out the end of their message, but the core technical details align with the files provided."
+        },
+        "draft_reply": "Hi @DaanVervacke, thank you for this detailed contribution and the comprehensive test suite for the Mijn Farmad Apotheek integration. Could you please link a discussion or issue that proposes this new integration, as the guide requires feature suggestions to start in the GitHub discussions? Also, please note that the description text appears to be cut off at the end ('My main '); sharing the full context would be helpful."
+      },
+      {
+        "number": 184085,
+        "title": "Add the quality scale to Radio Browser, at platinum",
+        "author": "frenck",
+        "url": "https://github.com/home-assistant/core/pull/184085",
+        "final_score": 68,
+        "tier": "Needs info",
+        "reason": "The PR adds a meaningful feature across several files with a clear description, showing solid effort.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (144 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [
+          "Ensure tests work."
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "Based on the title, description, and listed files, the changes appear to align with the stated purpose."
+        },
+        "draft_reply": "Thank you for the contribution! The quality\u2011scale addition looks great. Could you add tests covering the new integration behavior and link the related issue in the description? Once those are in place we can move forward."
+      }
+    ],
+    "_limit": 12
+  },
+  "freecodecamp/freecodecamp": {
+    "repo": "freeCodeCamp/freeCodeCamp",
+    "run_id": "1d9472189e92",
+    "model_used": "openai/gpt-oss-120b",
+    "storage_backend": "Local (fallback)",
+    "prs": [
+      {
+        "number": 70529,
+        "title": "fix(curriculum): add section headers to useState hook lesson",
+        "author": "Sidsmartz",
+        "url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/70529",
+        "final_score": 95,
+        "tier": "Review first",
+        "reason": "The PR is a small, focused content improvement that follows the project's template and links a relevant issue, demonstrating clear intent and proper procedure.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (10 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The title mentions adding section headers, and the diff clearly shows the addition of three markdown headings to the lecture file."
+        },
+        "draft_reply": "Thanks for this contribution! The additions look clear and improve the readability of the lecture. Please make sure the linked issue is updated or closed accordingly if this PR resolves it completely."
+      },
+      {
+        "number": 70532,
+        "title": "fix(curriculum): add section headers to health checks lecture",
+        "author": "rick-00101",
+        "url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/70532",
+        "final_score": 85,
+        "tier": "Review first",
+        "reason": "The PR clearly adds useful section headers and includes a concise description.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (10 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The diff shows the added ## headers as described."
+        },
+        "draft_reply": "Thank you for improving the lecture with clear section headers! The changes look good and match the description. Could you please double\u2011check that the formatting aligns with the rest of the curriculum style? Once that's confirmed, we'll be happy to merge."
+      },
+      {
+        "number": 70411,
+        "title": "fix(client): allow trending links in footer determine their text direction",
+        "author": "huyenltnguyen",
+        "url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/70411",
+        "final_score": 85,
+        "tier": "Review first",
+        "reason": "The PR includes a detailed description with screenshots, updates both the component and styles, and adds specific assertions to the existing tests.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (152 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The diff shows the addition of dir='auto' to Link components and corresponding CSS/styles, which matches the description."
+        },
+        "draft_reply": "Thanks for this focused fix! The explanation and screenshots help clarify the behavior for RTL locales. Please consider linking a related issue if there is one, as the automated check flagged a missing link."
+      },
+      {
+        "number": 70458,
+        "title": "fix(curriculum): generate lecture projects",
+        "author": "majestic-owl448",
+        "url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/70458",
+        "final_score": 82,
+        "tier": "Review first",
+        "reason": "The PR implements a clear feature with appropriate tests, follows a structured checklist, and the code changes are coherent and well-explained in the description.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (147 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The visible diff shows the addition of lecture title handling, error checking, and imports consistent with the description's claims about routing lecture creation and generating dashed names."
+        },
+        "draft_reply": "Thanks for this contribution! The changes look well-structured and the tests are a nice addition. Could you please link any related issue to this PR for better context? No other concerns from the visible changes."
+      },
+      {
+        "number": 70571,
+        "title": "fix(curriculum): add images to the Explorer/Finder management lesson",
+        "author": "Rudra-RNC",
+        "url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/70571",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "The PR adds multiple images with detailed alt text, showing clear and thoughtful work.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (33 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The added images and alt texts described match the changes shown in the diff."
+        },
+        "draft_reply": "Thank you for adding the images and comprehensive alt text to the lesson! The changes look good and improve accessibility. Could you double\u2011check that all image URLs load correctly in the curriculum? Once confirmed, we\u2019ll be happy to merge."
+      },
+      {
+        "number": 70492,
+        "title": "fix(curriculum): remove hidden test dependencies in Implement a Queue lab",
+        "author": "xiao115255",
+        "url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/70492",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "The PR provides a clear explanation and makes several documentation updates addressing hidden test dependencies.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (41 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The changes in the markdown file align with the described removal of hidden dependencies."
+        },
+        "draft_reply": "Thank you for the detailed description and the documentation updates! The changes look good and address the hidden test dependencies as described. Could you confirm that the existing test suite passes with these updates? Once verified, we can proceed with merging."
+      },
+      {
+        "number": 70477,
+        "title": "fix: correct path join and resolve explanation",
+        "author": "Geonsabu",
+        "url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/70477",
+        "final_score": 78,
+        "tier": "Review first",
+        "reason": "The PR is small but addresses a specific technical inaccuracy, uses the contribution template correctly, and links the relevant issue.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Very small change (5 lines), such as a typo or README tweak."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The description accurately summarizes the technical corrections made to the documentation in the diff."
+        },
+        "draft_reply": "Thanks for catching this! The updated explanation of `path.resolve()` is much clearer and accurate. Since you have filled out the checklist and linked the issue, we are good to review and merge this fix."
+      },
+      {
+        "number": 70433,
+        "title": "feat(curriculum): Add data sanitizer sweep lab",
+        "author": "MarkI2",
+        "url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/70433",
+        "final_score": 78,
+        "tier": "Review first",
+        "reason": "The PR demonstrates a clear, well-structured addition of curriculum content including i18n integration and a detailed challenge definition, supported by a thorough explanation of branching history and issue context.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (251 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The diff shows the creation of the 'lab-data-sanitizer-sweep' block in i18n and the corresponding challenge markdown, which aligns with the title and description."
+        },
+        "draft_reply": "Thank you for adding this new lab to the curriculum. The changes look well-structured, but please ensure the full challenge description in the Markdown file is complete, as the diff excerpt appears truncated. Could you also confirm that this content has been tested in the local curriculum viewer to ensure it renders correctly?"
+      },
+      {
+        "number": 70456,
+        "title": "fix(client): support Pyodide 0.29.5",
+        "author": "majestic-owl448",
+        "url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/70456",
+        "final_score": 75,
+        "tier": "Review first",
+        "reason": "The contributor provided a clear explanation of the version bump, documented the specific technical adjustments required for Webpack/Pyodide exports, and noted external dependencies and testing methods.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (57 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The diff visible in the excerpt confirms the version update in the lock file matches the description."
+        },
+        "draft_reply": "Thanks for this update! It's great to see the Pyodide version bump supported with the necessary configuration changes for the browser worker. Could you please link the related issue if there is one, so we can track this upgrade in our issues?\n\nAlso, since the `@freecodecamp/curriculum-helpers` update is pending, it might be good to note in the PR description which files in the curriculum repo are expected to change once that dependency is available."
+      },
+      {
+        "number": 70565,
+        "title": "fix(curriculum): remove library and framework references from Python's introductory lesson",
+        "author": "Dario-DC",
+        "url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/70565",
+        "final_score": 72,
+        "tier": "Review first",
+        "reason": "The PR makes a moderate number of content edits that improve the lesson.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (54 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The changes remove library and framework mentions as described in the title."
+        },
+        "draft_reply": "Thank you for improving the Python introductory lesson! Could you please link this PR to the relevant issue (replace the placeholder with the actual issue number) so we can track it properly? Once that's added, we can move forward with the review."
+      },
+      {
+        "number": 70579,
+        "title": "fix(curriculum): update C# content to align with MS",
+        "author": "moT01",
+        "url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/70579",
+        "final_score": 70,
+        "tier": "Review first",
+        "reason": "The PR updates multiple curriculum files with thoughtful content changes.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (154 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [
+          "missing linked issue"
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "Title and description changes are reflected in the shown diff."
+        },
+        "draft_reply": "Thank you for updating the C# curriculum to match the latest Microsoft content! Could you please add a reference to the related issue or PR that this change addresses? Once that's added, we can move forward with the review."
+      },
+      {
+        "number": 70430,
+        "title": "fix(curriculum): correct parameter names from camel-case to snake-case",
+        "author": "Snooz7725",
+        "url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/70430",
+        "final_score": 62,
+        "tier": "Needs info",
+        "reason": "The PR makes a small but clear correction of parameter naming.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Very small change (6 lines), such as a typo or README tweak."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The description and diff both show updating camelCase to snake_case."
+        },
+        "draft_reply": "Thank you for the contribution! This change updates the parameter names to snake_case as described. The scope looks appropriate for a documentation update, so it can be merged once any final review is completed."
+      }
+    ],
+    "_limit": 12
+  },
+  "d4vinci/scrapling": {
+    "repo": "D4Vinci/Scrapling",
+    "run_id": "91073fee2daf",
+    "model_used": "openai/gpt-oss-120b",
+    "storage_backend": "Local (fallback)",
+    "prs": [
+      {
+        "number": 462,
+        "title": "fix: stop response.follow() inheriting the method, params and body",
+        "author": "yetval",
+        "url": "https://github.com/D4Vinci/Scrapling/pull/462",
+        "final_score": 86,
+        "tier": "Review first",
+        "reason": "The PR features a clear bug explanation, source updates, documentation fixes, and new tests that demonstrate the fix's correctness.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
           },
           "has_description": {
             "passed": true,
@@ -46,22 +1729,22 @@
         "guideline_issues": [],
         "description_matches_code": {
           "value": true,
-          "note": "Not checked (AI review unavailable)."
+          "note": "The files modified align perfectly with the description: source logic is updated, docs are corrected, and new tests are added to verify the fix."
         },
-        "draft_reply": "Thanks for the contribution, davidism! A maintainer will take a look soon."
+        "draft_reply": "Thank you for this detailed fix and the clear explanation of the bug! It's great to see the new tests documenting the expected behavior, which makes it easy to validate. Given the scope of the change, please double-check that the linked error in the description is accurate or if a GitHub issue exists to link here."
       },
       {
-        "number": 5660,
-        "title": "Move parts of the session code to sansio",
-        "author": "pgjones",
-        "url": "https://github.com/pallets/flask/pull/5660",
-        "final_score": 65,
-        "tier": "Needs info",
-        "reason": "Scored from rule checks only. Flagged: links issue, touches tests.",
+        "number": 466,
+        "title": "fix: make request fingerprint independent of header order (#465)",
+        "author": "SarwadnyaMahajan",
+        "url": "https://github.com/D4Vinci/Scrapling/pull/466",
+        "final_score": 85,
+        "tier": "Review first",
+        "reason": "The contributor provided a precise technical explanation for the fix, linked the relevant issue, and added a specific regression test to validate the change.",
         "rule_flags": {
           "links_issue": {
-            "passed": false,
-            "note": "No linked issue found."
+            "passed": true,
+            "note": "Links an issue."
           },
           "has_description": {
             "passed": true,
@@ -72,511 +1755,8 @@
             "note": "Template filled out."
           },
           "touches_tests": {
-            "passed": false,
-            "note": "No test files changed."
-          },
-          "size_ok": {
             "passed": true,
-            "note": "Reasonably sized diff (428 lines)."
-          },
-          "account_age_ok": {
-            "passed": true,
-            "note": "Established account."
-          },
-          "returning_contributor": {
-            "passed": true,
-            "note": "Has prior contributions to this repo."
-          }
-        },
-        "guideline_issues": [],
-        "description_matches_code": {
-          "value": true,
-          "note": "Not checked (AI review unavailable)."
-        },
-        "draft_reply": "Thanks for the contribution, pgjones! To help us review it, could you link the related issue (or open one to discuss the change); add or update a test that covers the change? Happy to take another look once that's in."
-      },
-      {
-        "number": 5665,
-        "title": "Workflow",
-        "author": "pgjones",
-        "url": "https://github.com/pallets/flask/pull/5665",
-        "final_score": 35,
-        "tier": "Likely low-effort",
-        "reason": "Scored from rule checks only. Flagged: links issue, has description, template filled, touches tests.",
-        "rule_flags": {
-          "links_issue": {
-            "passed": false,
-            "note": "No linked issue found."
-          },
-          "has_description": {
-            "passed": false,
-            "note": "Description is empty."
-          },
-          "template_filled": {
-            "passed": false,
-            "note": "PR template left mostly blank."
-          },
-          "touches_tests": {
-            "passed": false,
-            "note": "No test files changed."
-          },
-          "size_ok": {
-            "passed": true,
-            "note": "Reasonably sized diff (26 lines)."
-          },
-          "account_age_ok": {
-            "passed": true,
-            "note": "Established account."
-          },
-          "returning_contributor": {
-            "passed": true,
-            "note": "Has prior contributions to this repo."
-          }
-        },
-        "guideline_issues": [],
-        "description_matches_code": {
-          "value": true,
-          "note": "Not checked (AI review unavailable)."
-        },
-        "draft_reply": "Thanks for the contribution, pgjones! To help us review it, could you link the related issue (or open one to discuss the change); add a short description of what this changes and why; fill in the PR template; add or update a test that covers the change? Happy to take another look once that's in."
-      }
-    ]
-  },
-  "ubuntu/gnome-shell-extension-appindicator": {
-    "repo": "ubuntu/gnome-shell-extension-appindicator",
-    "run_id": "caa5e5614e46",
-    "model_used": "none (rule checks only)",
-    "storage_backend": "Snowflake",
-    "prs": [
-      {
-        "number": 667,
-        "title": "appIndicator: Guarantee the last icon update paints",
-        "author": "everyx",
-        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/667",
-        "final_score": 85,
-        "tier": "Review first",
-        "reason": "Scored from rule checks only. Flagged: touches tests.",
-        "rule_flags": {
-          "links_issue": {
-            "passed": true,
-            "note": "Links an issue."
-          },
-          "has_description": {
-            "passed": true,
-            "note": "Description provided."
-          },
-          "template_filled": {
-            "passed": true,
-            "note": "Repo has no PR template."
-          },
-          "touches_tests": {
-            "passed": false,
-            "note": "No test files changed."
-          },
-          "size_ok": {
-            "passed": true,
-            "note": "Reasonably sized diff (210 lines)."
-          },
-          "account_age_ok": {
-            "passed": true,
-            "note": "Established account."
-          },
-          "returning_contributor": {
-            "passed": true,
-            "note": "Has prior contributions to this repo."
-          }
-        },
-        "guideline_issues": [],
-        "description_matches_code": {
-          "value": true,
-          "note": "Not checked (AI review unavailable)."
-        },
-        "draft_reply": "Thanks for the contribution, everyx! To help us review it, could you add or update a test that covers the change? Happy to take another look once that's in."
-      },
-      {
-        "number": 657,
-        "title": "dbusMenu: guard _replaceSelf() against stale signals on detached items, fix obsolete St.Widget.add()",
-        "author": "willy059",
-        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/657",
-        "final_score": 70,
-        "tier": "Review first",
-        "reason": "Scored from rule checks only. Flagged: touches tests, returning contributor.",
-        "rule_flags": {
-          "links_issue": {
-            "passed": true,
-            "note": "Links an issue."
-          },
-          "has_description": {
-            "passed": true,
-            "note": "Description provided."
-          },
-          "template_filled": {
-            "passed": true,
-            "note": "Repo has no PR template."
-          },
-          "touches_tests": {
-            "passed": false,
-            "note": "No test files changed."
-          },
-          "size_ok": {
-            "passed": true,
-            "note": "Reasonably sized diff (14 lines)."
-          },
-          "account_age_ok": {
-            "passed": true,
-            "note": "Established account."
-          },
-          "returning_contributor": {
-            "passed": false,
-            "note": "No earlier merged contributions found for this repo."
-          }
-        },
-        "guideline_issues": [],
-        "description_matches_code": {
-          "value": true,
-          "note": "Not checked (AI review unavailable)."
-        },
-        "draft_reply": "Thanks for the contribution, willy059! To help us review it, could you add or update a test that covers the change? Happy to take another look once that's in."
-      },
-      {
-        "number": 625,
-        "title": "indicatorStatusIcon: Add hide mode to toggle visibility of individual tray icons",
-        "author": "elkh510",
-        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/625",
-        "final_score": 70,
-        "tier": "Review first",
-        "reason": "Scored from rule checks only. Flagged: touches tests, returning contributor.",
-        "rule_flags": {
-          "links_issue": {
-            "passed": true,
-            "note": "Links an issue."
-          },
-          "has_description": {
-            "passed": true,
-            "note": "Description provided."
-          },
-          "template_filled": {
-            "passed": true,
-            "note": "Repo has no PR template."
-          },
-          "touches_tests": {
-            "passed": false,
-            "note": "No test files changed."
-          },
-          "size_ok": {
-            "passed": true,
-            "note": "Reasonably sized diff (967 lines)."
-          },
-          "account_age_ok": {
-            "passed": true,
-            "note": "Established account."
-          },
-          "returning_contributor": {
-            "passed": false,
-            "note": "No earlier merged contributions found for this repo."
-          }
-        },
-        "guideline_issues": [],
-        "description_matches_code": {
-          "value": true,
-          "note": "Not checked (AI review unavailable)."
-        },
-        "draft_reply": "Thanks for the contribution, elkh510! To help us review it, could you add or update a test that covers the change? Happy to take another look once that's in."
-      },
-      {
-        "number": 312,
-        "title": "Add indicator for recent icon IDs in prefs dialog",
-        "author": "Finii",
-        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/312",
-        "final_score": 65,
-        "tier": "Needs info",
-        "reason": "Scored from rule checks only. Flagged: links issue, touches tests.",
-        "rule_flags": {
-          "links_issue": {
-            "passed": false,
-            "note": "No linked issue found."
-          },
-          "has_description": {
-            "passed": true,
-            "note": "Description provided."
-          },
-          "template_filled": {
-            "passed": true,
-            "note": "Repo has no PR template."
-          },
-          "touches_tests": {
-            "passed": false,
-            "note": "No test files changed."
-          },
-          "size_ok": {
-            "passed": true,
-            "note": "Reasonably sized diff (53 lines)."
-          },
-          "account_age_ok": {
-            "passed": true,
-            "note": "Established account."
-          },
-          "returning_contributor": {
-            "passed": true,
-            "note": "Has prior contributions to this repo."
-          }
-        },
-        "guideline_issues": [],
-        "description_matches_code": {
-          "value": true,
-          "note": "Not checked (AI review unavailable)."
-        },
-        "draft_reply": "Thanks for the contribution, Finii! To help us review it, could you link the related issue (or open one to discuss the change); add or update a test that covers the change? Happy to take another look once that's in."
-      },
-      {
-        "number": 552,
-        "title": "Change default icon size to 20 so they aren't defacto invisible",
-        "author": "ahydronous",
-        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/552",
-        "final_score": 55,
-        "tier": "Needs info",
-        "reason": "Scored from rule checks only. Flagged: touches tests, size ok, returning contributor.",
-        "rule_flags": {
-          "links_issue": {
-            "passed": true,
-            "note": "Links an issue."
-          },
-          "has_description": {
-            "passed": true,
-            "note": "Description provided."
-          },
-          "template_filled": {
-            "passed": true,
-            "note": "Repo has no PR template."
-          },
-          "touches_tests": {
-            "passed": false,
-            "note": "No test files changed."
-          },
-          "size_ok": {
-            "passed": false,
-            "note": "Very small change (2 lines), such as a typo or README tweak."
-          },
-          "account_age_ok": {
-            "passed": true,
-            "note": "Established account."
-          },
-          "returning_contributor": {
-            "passed": false,
-            "note": "No earlier merged contributions found for this repo."
-          }
-        },
-        "guideline_issues": [],
-        "description_matches_code": {
-          "value": true,
-          "note": "Not checked (AI review unavailable)."
-        },
-        "draft_reply": "Thanks for the contribution, ahydronous! To help us review it, could you add or update a test that covers the change? Happy to take another look once that's in."
-      },
-      {
-        "number": 361,
-        "title": "indicatorStatusIcon: fix status icon location",
-        "author": "fflewddur",
-        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/361",
-        "final_score": 55,
-        "tier": "Needs info",
-        "reason": "Scored from rule checks only. Flagged: touches tests, size ok, returning contributor.",
-        "rule_flags": {
-          "links_issue": {
-            "passed": true,
-            "note": "Links an issue."
-          },
-          "has_description": {
-            "passed": true,
-            "note": "Description provided."
-          },
-          "template_filled": {
-            "passed": true,
-            "note": "Repo has no PR template."
-          },
-          "touches_tests": {
-            "passed": false,
-            "note": "No test files changed."
-          },
-          "size_ok": {
-            "passed": false,
-            "note": "Very small change (2 lines), such as a typo or README tweak."
-          },
-          "account_age_ok": {
-            "passed": true,
-            "note": "Established account."
-          },
-          "returning_contributor": {
-            "passed": false,
-            "note": "No earlier merged contributions found for this repo."
-          }
-        },
-        "guideline_issues": [],
-        "description_matches_code": {
-          "value": true,
-          "note": "Not checked (AI review unavailable)."
-        },
-        "draft_reply": "Thanks for the contribution, fflewddur! To help us review it, could you add or update a test that covers the change? Happy to take another look once that's in."
-      },
-      {
-        "number": 674,
-        "title": "PR: Handle Wine tray clicks without a DBusMenu",
-        "author": "ychromosome",
-        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/674",
-        "final_score": 50,
-        "tier": "Needs info",
-        "reason": "Scored from rule checks only. Flagged: links issue, touches tests, returning contributor.",
-        "rule_flags": {
-          "links_issue": {
-            "passed": false,
-            "note": "No linked issue found."
-          },
-          "has_description": {
-            "passed": true,
-            "note": "Description provided."
-          },
-          "template_filled": {
-            "passed": true,
-            "note": "Repo has no PR template."
-          },
-          "touches_tests": {
-            "passed": false,
-            "note": "No test files changed."
-          },
-          "size_ok": {
-            "passed": true,
-            "note": "Reasonably sized diff (41 lines)."
-          },
-          "account_age_ok": {
-            "passed": true,
-            "note": "Established account."
-          },
-          "returning_contributor": {
-            "passed": false,
-            "note": "No earlier merged contributions found for this repo."
-          }
-        },
-        "guideline_issues": [],
-        "description_matches_code": {
-          "value": true,
-          "note": "Not checked (AI review unavailable)."
-        },
-        "draft_reply": "Thanks for the contribution, ychromosome! To help us review it, could you link the related issue (or open one to discuss the change); add or update a test that covers the change? Happy to take another look once that's in."
-      },
-      {
-        "number": 673,
-        "title": "Keep long custom icon paths from widening preferences",
-        "author": "wrobelda",
-        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/673",
-        "final_score": 50,
-        "tier": "Needs info",
-        "reason": "Scored from rule checks only. Flagged: links issue, touches tests, returning contributor.",
-        "rule_flags": {
-          "links_issue": {
-            "passed": false,
-            "note": "No linked issue found."
-          },
-          "has_description": {
-            "passed": true,
-            "note": "Description provided."
-          },
-          "template_filled": {
-            "passed": true,
-            "note": "Repo has no PR template."
-          },
-          "touches_tests": {
-            "passed": false,
-            "note": "No test files changed."
-          },
-          "size_ok": {
-            "passed": true,
-            "note": "Reasonably sized diff (36 lines)."
-          },
-          "account_age_ok": {
-            "passed": true,
-            "note": "Established account."
-          },
-          "returning_contributor": {
-            "passed": false,
-            "note": "No earlier merged contributions found for this repo."
-          }
-        },
-        "guideline_issues": [],
-        "description_matches_code": {
-          "value": true,
-          "note": "Not checked (AI review unavailable)."
-        },
-        "draft_reply": "Thanks for the contribution, wrobelda! To help us review it, could you link the related issue (or open one to discuss the change); add or update a test that covers the change? Happy to take another look once that's in."
-      },
-      {
-        "number": 640,
-        "title": "preferences: give pages explicit, namespaced GTypeNames",
-        "author": "ThorOdinson246",
-        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/640",
-        "final_score": 50,
-        "tier": "Needs info",
-        "reason": "Scored from rule checks only. Flagged: links issue, touches tests, returning contributor.",
-        "rule_flags": {
-          "links_issue": {
-            "passed": false,
-            "note": "No linked issue found."
-          },
-          "has_description": {
-            "passed": true,
-            "note": "Description provided."
-          },
-          "template_filled": {
-            "passed": true,
-            "note": "Repo has no PR template."
-          },
-          "touches_tests": {
-            "passed": false,
-            "note": "No test files changed."
-          },
-          "size_ok": {
-            "passed": true,
-            "note": "Reasonably sized diff (12 lines)."
-          },
-          "account_age_ok": {
-            "passed": true,
-            "note": "Established account."
-          },
-          "returning_contributor": {
-            "passed": false,
-            "note": "No earlier merged contributions found for this repo."
-          }
-        },
-        "guideline_issues": [],
-        "description_matches_code": {
-          "value": true,
-          "note": "Not checked (AI review unavailable)."
-        },
-        "draft_reply": "Thanks for the contribution, ThorOdinson246! To help us review it, could you link the related issue (or open one to discuss the change); add or update a test that covers the change? Happy to take another look once that's in."
-      },
-      {
-        "number": 607,
-        "title": "Fix SIGSEGV crash in _getActivationToken when appInfo is null",
-        "author": "doziedotdev",
-        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/607",
-        "final_score": 50,
-        "tier": "Needs info",
-        "reason": "Scored from rule checks only. Flagged: links issue, touches tests, returning contributor.",
-        "rule_flags": {
-          "links_issue": {
-            "passed": false,
-            "note": "No linked issue found."
-          },
-          "has_description": {
-            "passed": true,
-            "note": "Description provided."
-          },
-          "template_filled": {
-            "passed": true,
-            "note": "Repo has no PR template."
-          },
-          "touches_tests": {
-            "passed": false,
-            "note": "No test files changed."
+            "note": "Tests added or updated."
           },
           "size_ok": {
             "passed": true,
@@ -591,21 +1771,68 @@
             "note": "No earlier merged contributions found for this repo."
           }
         },
+        "guideline_issues": [
+          "Add or change doctests? -- Note: Please avoid changing both code and tests in a single pull request."
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "The description accurately describes sorting headers in request.py and adding a test in test_request.py, which aligns with the listed file names."
+        },
+        "draft_reply": "Thank you for this well-explained fix and the regression test! I noticed the PR template asks to avoid changing both code and tests in a single pull request; could you clarify if this should be split or if submitting them together is acceptable for this bug fix? Also, please ensure the PR is targeting the dev branch as required by our guidelines."
+      },
+      {
+        "number": 470,
+        "title": "fix(stealth): bound the Cloudflare solve by the fetch timeout",
+        "author": "Yi-111-a",
+        "url": "https://github.com/D4Vinci/Scrapling/pull/470",
+        "final_score": 82,
+        "tier": "Review first",
+        "reason": "The PR makes a sizable code change with a thorough explanation and adds tests, showing clear and thoughtful effort.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (232 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
         "guideline_issues": [],
         "description_matches_code": {
           "value": true,
-          "note": "Not checked (AI review unavailable)."
+          "note": "The description details changes to the Cloudflare solver and the listed files correspond to those changes."
         },
-        "draft_reply": "Thanks for the contribution, doziedotdev! To help us review it, could you link the related issue (or open one to discuss the change); add or update a test that covers the change? Happy to take another look once that's in."
+        "draft_reply": "Thank you for the detailed PR and for adding tests to cover the fix. The explanation of the issue and the changes to the stealth engine are clear. Could you confirm that the CI passes on the latest dev branch and that the new test fully exercises the timeout behavior? Once that's verified, we can move forward with merging."
       },
       {
-        "number": 424,
-        "title": "Remove the Wayland note",
-        "author": "orowith2os",
-        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/424",
-        "final_score": 50,
-        "tier": "Needs info",
-        "reason": "Scored from rule checks only. Flagged: links issue, size ok, returning contributor.",
+        "number": 469,
+        "title": "fix(fetchers): fall back to  when Content-Type header has no charset",
+        "author": "yetval",
+        "url": "https://github.com/D4Vinci/Scrapling/pull/469",
+        "final_score": 82,
+        "tier": "Review first",
+        "reason": "The PR includes a clear description, specific testing details with real-world verification, and adheres to the contribution guide's requirements for tests and code quality checks.",
         "rule_flags": {
           "links_issue": {
             "passed": false,
@@ -617,60 +1844,15 @@
           },
           "template_filled": {
             "passed": true,
-            "note": "Repo has no PR template."
+            "note": "Template filled out."
           },
           "touches_tests": {
             "passed": true,
-            "note": "Docs-only change, tests not expected."
-          },
-          "size_ok": {
-            "passed": false,
-            "note": "Very small change (2 lines), such as a typo or README tweak."
-          },
-          "account_age_ok": {
-            "passed": true,
-            "note": "Established account."
-          },
-          "returning_contributor": {
-            "passed": false,
-            "note": "No earlier merged contributions found for this repo."
-          }
-        },
-        "guideline_issues": [],
-        "description_matches_code": {
-          "value": true,
-          "note": "Not checked (AI review unavailable)."
-        },
-        "draft_reply": "Thanks for the contribution, orowith2os! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
-      },
-      {
-        "number": 626,
-        "title": "i18n: Update Occitan locale",
-        "author": "Mejans",
-        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/626",
-        "final_score": 45,
-        "tier": "Needs info",
-        "reason": "Scored from rule checks only. Flagged: links issue, has description, touches tests.",
-        "rule_flags": {
-          "links_issue": {
-            "passed": false,
-            "note": "No linked issue found."
-          },
-          "has_description": {
-            "passed": false,
-            "note": "Description is empty."
-          },
-          "template_filled": {
-            "passed": true,
-            "note": "Repo has no PR template."
-          },
-          "touches_tests": {
-            "passed": false,
-            "note": "No test files changed."
+            "note": "Tests added or updated."
           },
           "size_ok": {
             "passed": true,
-            "note": "Reasonably sized diff (135 lines)."
+            "note": "Reasonably sized diff (41 lines)."
           },
           "account_age_ok": {
             "passed": true,
@@ -681,41 +1863,90 @@
             "note": "Has prior contributions to this repo."
           }
         },
-        "guideline_issues": [],
+        "guideline_issues": [
+          "Read our [AI Contribution Policy](AI_POLICY.md) before submitting. Any contribution made with AI assistance must disclose that in the PR or issue."
+        ],
         "description_matches_code": {
           "value": true,
-          "note": "Not checked (AI review unavailable)."
+          "note": "The description accurately reflects the changes to charset fallback logic and the corresponding test updates."
         },
-        "draft_reply": "Thanks for the contribution, Mejans! To help us review it, could you link the related issue (or open one to discuss the change); add a short description of what this changes and why; add or update a test that covers the change? Happy to take another look once that's in."
+        "draft_reply": "Thank you for this PR and for following the contributing guide so thoroughly, including disclosing the use of AI assistance. Could you please link the relevant issue that this fix addresses? I look forward to merging this soon."
       },
       {
-        "number": 672,
-        "title": "locale: Update the Brazilian Portuguese translation",
-        "author": "cfgnunes",
-        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/672",
-        "final_score": 30,
-        "tier": "Likely low-effort",
-        "reason": "Scored from rule checks only. Flagged: links issue, has description, touches tests, returning contributor.",
+        "number": 474,
+        "title": "fix(ai): strip every noise tag, not just the ones before a nested one",
+        "author": "Yigtwxx",
+        "url": "https://github.com/D4Vinci/Scrapling/pull/474",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "The PR provides a clear bug fix with detailed explanation and added tests.",
         "rule_flags": {
           "links_issue": {
             "passed": false,
             "note": "No linked issue found."
           },
           "has_description": {
-            "passed": false,
-            "note": "Description is very short."
+            "passed": true,
+            "note": "Description provided."
           },
           "template_filled": {
             "passed": true,
-            "note": "Repo has no PR template."
+            "note": "Template filled out."
           },
           "touches_tests": {
-            "passed": false,
-            "note": "No test files changed."
+            "passed": true,
+            "note": "Tests added or updated."
           },
           "size_ok": {
             "passed": true,
-            "note": "Reasonably sized diff (168 lines)."
+            "note": "Reasonably sized diff (30 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [
+          "Missing link to a related issue in the description"
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "The description clearly explains the bug and the changes made in the files."
+        },
+        "draft_reply": "Thank you for the detailed contribution! The fix looks solid and the added test is helpful. Could you please add a link to the relevant issue (or create one) so we can track this change? Also, ensure the PR is targeted at the dev branch if it isn\u2019t already."
+      },
+      {
+        "number": 467,
+        "title": "fix: preserve Patchright disabled features on Windows",
+        "author": "aritejhg",
+        "url": "https://github.com/D4Vinci/Scrapling/pull/467",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "The PR provides a clear, well\u2011explained bug fix with an added regression test despite its small size.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (5 lines)."
           },
           "account_age_ok": {
             "passed": true,
@@ -729,56 +1960,58 @@
         "guideline_issues": [],
         "description_matches_code": {
           "value": true,
-          "note": "Not checked (AI review unavailable)."
+          "note": "The description of removing the duplicate launch argument aligns with changes in constants.py and the new test."
         },
-        "draft_reply": "Thanks for the contribution, cfgnunes! To help us review it, could you link the related issue (or open one to discuss the change); add a short description of what this changes and why; add or update a test that covers the change? Happy to take another look once that's in."
+        "draft_reply": "Thank you for the thoughtful bug fix and for adding a regression test! Could you please confirm that this PR is opened against the\u202fdev\u202fbranch as required by our contribution guide? Let us know if there are any additional edge\u2011case tests you think would be helpful."
       },
       {
-        "number": 473,
-        "title": "Adding es.po translation",
-        "author": "andreyadrian",
-        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/473",
-        "final_score": 30,
-        "tier": "Likely low-effort",
-        "reason": "Scored from rule checks only. Flagged: links issue, has description, touches tests, returning contributor.",
+        "number": 475,
+        "title": "fix(spiders): pass stealthy_headers to the session instead of curl_cffi",
+        "author": "Yigtwxx",
+        "url": "https://github.com/D4Vinci/Scrapling/pull/475",
+        "final_score": 79,
+        "tier": "Review first",
+        "reason": "The PR provides a clear fix with added tests and a detailed description, indicating solid contributor effort.",
         "rule_flags": {
           "links_issue": {
             "passed": false,
             "note": "No linked issue found."
           },
           "has_description": {
-            "passed": false,
-            "note": "Description is empty."
+            "passed": true,
+            "note": "Description provided."
           },
           "template_filled": {
             "passed": true,
-            "note": "Repo has no PR template."
+            "note": "Template filled out."
           },
           "touches_tests": {
-            "passed": false,
-            "note": "No test files changed."
+            "passed": true,
+            "note": "Tests added or updated."
           },
           "size_ok": {
             "passed": true,
-            "note": "Reasonably sized diff (140 lines)."
+            "note": "Reasonably sized diff (68 lines)."
           },
           "account_age_ok": {
             "passed": true,
             "note": "Established account."
           },
           "returning_contributor": {
-            "passed": false,
-            "note": "No earlier merged contributions found for this repo."
+            "passed": true,
+            "note": "Has prior contributions to this repo."
           }
         },
-        "guideline_issues": [],
+        "guideline_issues": [
+          "Missing linked issue for the bug fix as required by the contributing guide"
+        ],
         "description_matches_code": {
           "value": true,
-          "note": "Not checked (AI review unavailable)."
+          "note": "The title and description align with modifications to session handling and added tests, indicating the code implements the described change."
         },
-        "draft_reply": "Thanks for the contribution, andreyadrian! To help us review it, could you link the related issue (or open one to discuss the change); add a short description of what this changes and why; add or update a test that covers the change? Happy to take another look once that's in."
+        "draft_reply": "Thank you for the helpful fix and the added tests! Could you please link the relevant issue (or create one) that this PR addresses so we can track it properly? Once that's added, we'll run the CI to confirm everything passes."
       }
     ],
-    "_limit": 30
+    "_limit": 12
   }
 }

@@ -12,24 +12,25 @@ PR Lifeguard rescues open-source maintainers from low-effort pull requests. It s
 - Banning AI is the wrong fix. Plenty of good PRs use AI. The real signal is **effort**: did the author explain, link an issue, add tests, keep the change focused?
 
 ## 2. The solution (30s)
-- Paste a GitHub repo URL. We fetch the open PRs.
+- Paste a GitHub repo. We fetch the open PRs, their diffs, the repo's CONTRIBUTING.md and PR template.
 - Seven transparent rule checks: linked issue, description, template filled, tests touched, sensible size, account age, returning contributor.
-- A Snowflake Cortex LLM reviews guideline fit and whether the description matches the code.
-- Every PR gets a 0-100 effort score, a tier (Review first / Needs info / Likely low-effort), a one-line reason and a polite draft reply.
-- Results are saved in Snowflake and feed a dashboard.
+- An open-weight LLM (gpt-oss-120b, falling back to Qwen) reads the description, the diff excerpt and the contributing guide: guideline fit, whether the description matches the code, and a polite draft reply.
+- Score = 50% rule checks + 50% LLM effort score, so every number has visible reasons.
+- Results are saved (Snowflake, or local SQLite if Snowflake is unreachable) and feed the Insights tab.
 
 ## 3. Live demo (90s)
-Run in demo mode so nothing depends on conference wifi.
-1. Open the app. The ranked sample queue is already loaded. Point at the stat tiles: how many to review first, how many to push back on.
-2. Top card: "Fix race condition in cache invalidation", score 92. Reason: links an issue, adds a regression test. Open details, show the PASS checks.
-3. Bottom card: "Refactor everything for clarity", score 9. Open details: five FAIL checks, "description doesn't match code". Show the draft reply: polite, specific, asks for an issue and smaller pieces. Use the copy button on the code block.
-4. Switch to the Dashboard tab. Show the tier donut, the most common failed checks (the thing contributors keep forgetting) and the per-repo averages. Say: this is the data from Snowflake, so a project can see trends across runs.
-5. (If live backend is ready) toggle Demo mode off, paste a real repo and run it.
+Keep Demo mode on so nothing depends on conference wifi (cached repos replay instantly).
+1. Click the **first-contributions** example and triage. This is exactly the Hacktoberfest traffic: "my first commit", "HI HI". Point at the stat tiles: zero to review first, several likely low-effort.
+2. Open a card: red chips show what is missing (no linked issue), grey chips are context, not faults (first-timer). Open "Details and draft reply": the reply is kind and asks for the specific missing thing. Use the copy button.
+3. Point at a grounded finding, e.g. a "add my name" PR that rewrites 900 lines of Contributors.md. The model saw the diff; it is not guessing.
+4. Click **home-assistant** (a mature project) and triage: mostly "Review first". Same tool, very different queue. That is the point: it rewards effort, not who you are.
+5. Insights tab: tier donut, the most common failed checks (what contributors keep forgetting), recent PRs.
+6. (Optional) Demo mode off, paste any repo, run it live (~15-30s for 12 PRs).
 
 ## 4. Why it fits the theme and the sponsor (20s)
-- Open-source AI used to protect open source, not flood it.
-- Built on Snowflake: Cortex for the model calls and Snowflake tables for storage and the dashboard.
-- Scores come from explainable checks plus an LLM, so every score has a visible reason. Maintainers can trust it and contributors can learn from it.
+- Open-source AI used to protect open source, not flood it. Only open-weight models.
+- Snowflake is the system of record: every scored PR lands in a `PR_SCORES` table that powers the trends view across runs and repos.
+- Scores come from explainable checks plus an LLM, so maintainers can trust them and contributors can learn from them.
 
 ## 5. Close (10s)
 "Maintainers keep their time. Good contributors get a faster review. Low-effort PRs get a kind, clear path to improve. PR Lifeguard."
@@ -38,12 +39,13 @@ Run in demo mode so nothing depends on conference wifi.
 - **Isn't this just AI detection?** No. We never ask whether AI wrote it. A careful AI-assisted PR scores high; a careless human one scores low.
 - **Can contributors game it?** Yes, by doing the things we check for: explaining the change, linking an issue and adding tests. That is the behavior maintainers want.
 - **Will it auto-close PRs?** No. It only drafts replies. The maintainer stays in control.
-- **What if the model is down?** The pipeline falls back to a second model and then to rule checks alone. The UI shows which model and storage backend were used.
-- **What next?** A GitHub Action that comments on new PRs automatically, per-repo rule tuning, and CONTRIBUTING.md-aware checks.
+- **What if the model is down or rate limited?** It switches to the second model, and if both fail it scores from the rule checks alone and says so in the reason. Storage falls back to SQLite. The sidebar shows which model and storage were used.
+- **Does the model see the code?** Yes, a diff excerpt (first ~1500 chars). It is told never to claim anything it cannot see in the excerpt.
+- **What next?** A GitHub Action that comments on new PRs automatically, per-repo rule tuning, and Snowflake Cortex once it is enabled on our account.
 
 ## Demo checklist
 - [ ] `.venv/bin/streamlit run app.py` starts cleanly
-- [ ] Demo mode toggle is on
-- [ ] Browser zoomed so the cards and dashboard are readable from the back of the room
-- [ ] Dashboard tab opened once so charts are warm
+- [ ] Demo mode toggle is on, and first-contributions + home-assistant are cached (sidebar shows "N repo(s) cached")
+- [ ] Browser zoomed so the cards and Insights are readable from the back of the room
+- [ ] Insights tab opened once so charts are warm
 - [ ] Backup: screen recording of the full flow

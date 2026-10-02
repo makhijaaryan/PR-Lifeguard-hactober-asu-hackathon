@@ -14,9 +14,9 @@ RULE_WEIGHT = 0.5                 # final_score = RULE_WEIGHT * rule_score + (1 
 TIER_REVIEW_FIRST = 70            # final_score >= this
 TIER_NEEDS_INFO = 40              # final_score >= this (and below REVIEW_FIRST)
 MAX_WORKERS = 4
-BODY_LIMIT = 2000
-GUIDE_LIMIT = 3000
-FILES_SHOWN = 30
+BODY_LIMIT = 1500                 # prompt trims keep each call small: free LLM tiers cap tokens per minute
+GUIDE_LIMIT = 2000
+FILES_SHOWN = 20
 
 SYSTEM_PROMPT = """You help open-source maintainers triage pull requests.
 Judge the EFFORT the contributor put in and how well the PR fits the project's own contribution rules.
@@ -34,7 +34,8 @@ Reply with ONLY one JSON object, no markdown fences, no extra text, with exactly
 }
 Rules:
 - guideline_issues: only rules actually stated in the contributing guide; use [] if there is no guide or nothing is missed.
-- description_matches_code: the diff itself is not provided, so judge only from the title, description, file names and size. If you cannot tell, use true and say so in the note.
+- description_matches_code: compare the title and description with the diff excerpt. The excerpt may be cut off, so only describe changes you can actually see in it. If you cannot tell, use true and say so in the note.
+- Never claim anything about the code that is not visible in the diff excerpt.
 - draft_reply: thank the author, ask for whatever is missing (linked issue, description, tests, smaller scope), never accuse the author of anything and never mention AI."""
 
 REPLY_ASKS = {
@@ -119,6 +120,10 @@ Description:
 \"\"\"
 {(pr.get('body') or '(empty)')[:BODY_LIMIT]}
 \"\"\"
+Diff excerpt (may be truncated):
+\"\"\"
+{pr.get('patch_excerpt') or '(not available)'}
+\"\"\"
 
 AUTOMATED RULE CHECKS (already computed, for context):
 {checks}
@@ -128,8 +133,9 @@ Return the JSON object now."""
 
 def _fallback(pr, rule_result, error):
     failed = [n for n, f in rule_result["rule_flags"].items() if not f["passed"]]
-    reason = "Scored from rule checks only. " + (
-        "Flagged: " + ", ".join(n.replace("_", " ") for n in failed) + "." if failed else "All rule checks passed."
+    notes = [rule_result["rule_flags"][n]["note"].rstrip(".") for n in failed]
+    reason = "Rule checks only (AI review unavailable): " + (
+        "; ".join(notes[:3]) + "." if notes else "all checks passed."
     )
     asks = [REPLY_ASKS[n] for n in failed if n in REPLY_ASKS]
     if "size_ok" in failed and (pr.get("additions", 0) + pr.get("deletions", 0)) > 1000:

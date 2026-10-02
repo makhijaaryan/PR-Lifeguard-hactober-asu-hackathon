@@ -29,8 +29,13 @@ if not USE_FAKE_DATA:
     except Exception as e:  # missing dependency or credentials: say so instead of hiding it
         live, LIVE_ERROR = None, str(e)
 
-REPO_RE = re.compile(r"^https?://github\.com/[\w.-]+/[\w.-]+/?$")
-DEMO_REPO = "https://github.com/pallets/flask"
+REPO_RE = re.compile(r"^(?:(?:https?://)?(?:www\.)?github\.com/)?[\w.-]+/[\w.-]+?(?:\.git)?/?$")
+DEMO_REPO = "https://github.com/firstcontributions/first-contributions"
+EXAMPLE_REPOS = {  # one-click examples under the input: Hacktoberfest-style traffic vs a mature project
+    "first-contributions": "https://github.com/firstcontributions/first-contributions",
+    "freeCodeCamp": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "home-assistant": "https://github.com/home-assistant/core",
+}
 CACHE_PATH = Path(__file__).resolve().parent / "demo_cache.json"
 
 
@@ -124,6 +129,7 @@ html {font-size: 18px;}
 .chip {padding: .12rem .6rem; border-radius: 999px; font-size: .8rem; font-weight: 600; cursor: help;}
 .chip.ok {color: #34d399; background: rgba(52,211,153,.14); border: 1px solid rgba(52,211,153,.35);}
 .chip.off {color: #b8c4d6; background: rgba(148,163,184,.10); border: 1px solid rgba(148,163,184,.25);}
+.chip.no {color: #fca5a5; background: rgba(248,113,113,.12); border: 1px solid rgba(248,113,113,.35);}
 .sbox {padding: .9rem 1rem; border-radius: 12px; background: #0b1220; border: 1px solid rgba(148,163,184,.18);
   font-size: .95rem; color: #e6edf7; line-height: 1.5;}
 .sbox b {color: #e6edf7;}
@@ -142,7 +148,10 @@ div[data-testid="stExpander"] details {border: 1px solid rgba(148,163,184,.12); 
 .step .k {color: #38bdf8; font-weight: 700; font-size: .85rem; letter-spacing: .08em; margin-top: .6rem;}
 .step .h {font-weight: 700; font-size: 1.2rem; margin: .1rem 0 .3rem;}
 .step .d {color: #c3cfe0; font-size: 1rem; line-height: 1.45;}
-.stButton>button[kind="primary"] {border-radius: 10px; font-weight: 700; height: 3.2rem; font-size: 1.1rem;}
+.stButton>button[kind="primary"] {border-radius: 10px; font-weight: 700; height: 3.2rem; font-size: 1.1rem;
+  color: #0b1220;}
+.stButton>button[kind="primary"]:hover {color: #0b1220;}
+.stButton>button[kind="primary"] p {font-weight: 700;}
 </style>
 """
 st.markdown(CSS, unsafe_allow_html=True)
@@ -164,11 +173,33 @@ def badge(passed):
     return f'<span class="badge {"ok" if passed else "bad"}">{"PASS" if passed else "FAIL"}</span>'
 
 
+# (label when passed, label when failed). Contributor-history checks are context, not faults,
+# so they fail in neutral grey instead of red.
+CHIP_LABELS = {
+    "links_issue": ("Linked issue", "No linked issue"),
+    "has_description": ("Has description", "No description"),
+    "template_filled": ("Template filled", "Template blank"),
+    "touches_tests": ("Has tests", "No tests"),
+    "size_ok": ("Focused size", "Unusual size"),
+    "account_age_ok": ("Established account", "New account"),
+    "returning_contributor": ("Returning contributor", "First-timer"),
+}
+NEUTRAL_CHECKS = {"account_age_ok", "returning_contributor"}
+
+
 def chip(name, flag):
     flag = flag if isinstance(flag, dict) else {}
-    cls = "ok" if flag.get("passed") else "off"
-    label = str(name).replace("_", " ")
-    return f'<span class="chip {cls}" title="{esc(flag.get("note", ""))}">{esc(label)}</span>'
+    passed, note = bool(flag.get("passed")), str(flag.get("note", ""))
+    ok_label, bad_label = CHIP_LABELS.get(name, (str(name).replace("_", " "),) * 2)
+    if passed:
+        label, cls, icon = ok_label, "ok", "✓"
+        if name == "touches_tests" and note.lower().startswith("docs-only"):
+            label = "Tests n/a (docs)"
+    else:
+        label, cls, icon = bad_label, ("off" if name in NEUTRAL_CHECKS else "no"), "✗"
+        if name == "size_ok":
+            label = "Very large diff" if note.lower().startswith("large") else "Very small diff"
+    return f'<span class="chip {cls}" title="{esc(note)}">{icon} {esc(label)}</span>'
 
 
 def pr_card(pr):
@@ -273,18 +304,21 @@ triage, load_history = get_backend()
 tab_triage, tab_insights = st.tabs(["Triage", "Insights"])
 
 with tab_triage:
+    st.session_state.setdefault("repo_url", DEMO_REPO)
     c1, c2 = st.columns([4, 1])
-    repo_url = c1.text_input(
-        "GitHub repo URL", value=DEMO_REPO,
-        placeholder="https://github.com/owner/name", label_visibility="collapsed",
-    )
-    limit = c2.number_input("Max PRs", 1, 100, 25, label_visibility="collapsed")
+    repo_url = c1.text_input("GitHub repo", key="repo_url", placeholder="https://github.com/owner/name or owner/name")
+    limit = c2.number_input("Max PRs", 1, 50, 12, help="More PRs take longer: about 1-2 seconds each.")
+    ex_cols = st.columns([0.45, 1.6, 1.4, 1.5, 4], vertical_alignment="center")
+    ex_cols[0].caption("Try:")
+    for col, (label, url) in zip(ex_cols[1:], EXAMPLE_REPOS.items()):
+        col.button(label, key=f"ex_{label}", width="stretch",
+                   on_click=lambda u=url: st.session_state.update(repo_url=u))
     go = st.button("Triage open PRs", type="primary", width="stretch")
 
     if go:
         repo_url = repo_url.strip()
         if not REPO_RE.match(repo_url):
-            st.error("Enter a GitHub repo URL like https://github.com/owner/name")
+            st.error("Enter a GitHub repo like https://github.com/owner/name or owner/name")
         else:
             bar = st.progress(0.0, text="Starting...")
             try:
@@ -326,7 +360,7 @@ CHECK_LABELS = {
     "has_description": "No description",
     "template_filled": "Template not filled",
     "touches_tests": "No tests",
-    "size_ok": "Oversized diff",
+    "size_ok": "Very small or very large diff",
     "account_age_ok": "New account",
     "returning_contributor": "First-time contributor",
 }
@@ -387,12 +421,12 @@ with tab_insights:
                 fig = px.pie(counts, names="tier", values="count", hole=0.62,
                              color="tier", color_discrete_map=TIER_COLORS)
                 fig.update_traces(textinfo="value", sort=False)
-                st.plotly_chart(style_fig(fig), use_container_width=True)
+                st.plotly_chart(style_fig(fig), width="stretch")
             with right:
                 section("Effort score distribution")
                 fig = px.histogram(d, x="final_score", nbins=10, color="tier",
                                    category_orders={"tier": TIER_ORDER}, color_discrete_map=TIER_COLORS)
-                st.plotly_chart(style_fig(fig), use_container_width=True)
+                st.plotly_chart(style_fig(fig), width="stretch")
 
             section("Most common failed checks")
             fails = d["failed_checks"].str.split(",").explode()
@@ -400,7 +434,7 @@ with tab_insights:
             fails = fails.value_counts().sort_values().reset_index()
             fails.columns = ["check", "count"]
             fig = px.bar(fails, x="count", y="check", orientation="h", color_discrete_sequence=[ACCENT])
-            st.plotly_chart(style_fig(fig), use_container_width=True)
+            st.plotly_chart(style_fig(fig), width="stretch")
 
             section("20 most recent scored PRs")
             st.dataframe(

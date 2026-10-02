@@ -9,9 +9,10 @@ from engine.config import load_config  # reads .streamlit/secrets.toml
 
 API = "https://api.github.com"
 TIMEOUT = 20
-MAX_WORKERS = 4
+MAX_WORKERS = 8  # GitHub calls are I/O bound and cheap; the LLM stays at 4 in scorer.py
 GUIDE_LIMIT = 3000
 FILES_LIMIT = 100  # filenames fetched per PR (one page)
+PATCH_LIMIT = 1500  # chars of diff kept per PR for the model
 
 _ISSUE_KEYWORDS = (
     r"(?:close[sd]?|fix(?:e[sd])?|resolve[sd]?|ref(?:s|erences?)?|related\s+to|part\s+of|see)"
@@ -79,6 +80,21 @@ def _links_issue(body):
     return bool(_LINKS_ISSUE_RE.search(body or ""))
 
 
+def _patch_excerpt(files, limit=PATCH_LIMIT):
+    """First `limit` chars of the unified diff, file by file, so the model can see real changes."""
+    parts, used = [], 0
+    for f in files:
+        patch = f.get("patch")
+        if not patch:
+            continue
+        chunk = f"--- {f['filename']}\n{patch}\n"
+        parts.append(chunk[: max(0, limit - used)])
+        used += len(chunk)
+        if used >= limit:
+            break
+    return "".join(parts)
+
+
 def _account_created_at(login, cache):
     """Account creation time for a user (None if unavailable). `cache` is shared per call."""
     if not login:
@@ -111,6 +127,7 @@ def _build_pr(owner, repo, summary, user_cache):
         "deletions": detail.get("deletions", 0),
         "changed_files": detail.get("changed_files", len(files)),
         "filenames": [f["filename"] for f in files],
+        "patch_excerpt": _patch_excerpt(files),
         "links_issue": _links_issue(f"{detail.get('title') or ''}\n{body}"),
     }
 
