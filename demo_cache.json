@@ -2013,5 +2013,2264 @@
       }
     ],
     "_limit": 12
+  },
+  "langchain-ai/langchain": {
+    "repo": "langchain-ai/langchain",
+    "run_id": "40b855dd4e45",
+    "model_used": "none (rule checks only)",
+    "storage_backend": "Local (fallback)",
+    "prs": [
+      {
+        "number": 40707,
+        "title": "fix(typesafe): reject empty `questions` in `TypeSafeClassifier`",
+        "author": "ChampionsZhang",
+        "url": "https://github.com/langchain-ai/langchain/pull/40707",
+        "final_score": 100,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): all checks passed.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (31 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, ChampionsZhang! A maintainer will take a look soon."
+      },
+      {
+        "number": 39698,
+        "title": "fix(openrouter): close `httpx` clients created for attribution headers",
+        "author": "HaoChiBao",
+        "url": "https://github.com/langchain-ai/langchain/pull/39698",
+        "final_score": 100,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): all checks passed.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (156 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, HaoChiBao! A maintainer will take a look soon."
+      },
+      {
+        "number": 39336,
+        "title": "fix(core): fix issues around `Required/NotRequired` in TypedDict tools",
+        "author": "imnishitha",
+        "url": "https://github.com/langchain-ai/langchain/pull/39336",
+        "final_score": 100,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): all checks passed.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (92 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, imnishitha! A maintainer will take a look soon."
+      },
+      {
+        "number": 39310,
+        "title": "fix(openai): preserve `status` on `function_call` blocks",
+        "author": "imnishitha",
+        "url": "https://github.com/langchain-ai/langchain/pull/39310",
+        "final_score": 100,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): all checks passed.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (190 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, imnishitha! A maintainer will take a look soon."
+      },
+      {
+        "number": 39309,
+        "title": "fix(openai): preserve non-strict default in Responses API tools",
+        "author": "imnishitha",
+        "url": "https://github.com/langchain-ai/langchain/pull/39309",
+        "final_score": 100,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): all checks passed.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (68 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, imnishitha! A maintainer will take a look soon."
+      },
+      {
+        "number": 39269,
+        "title": "fix(langchain): cutoff fixes in `SummarizationMiddleware`",
+        "author": "imnishitha",
+        "url": "https://github.com/langchain-ai/langchain/pull/39269",
+        "final_score": 100,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): all checks passed.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (269 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, imnishitha! A maintainer will take a look soon."
+      },
+      {
+        "number": 39264,
+        "title": "fix(langchain): inconsistencies between `PIIMiddleware`'s state hooks",
+        "author": "imnishitha",
+        "url": "https://github.com/langchain-ai/langchain/pull/39264",
+        "final_score": 100,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): all checks passed.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (326 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, imnishitha! A maintainer will take a look soon."
+      },
+      {
+        "number": 40993,
+        "title": "fix(groq): filter invalid tool call blocks in v1 conversion",
+        "author": "agustin18",
+        "url": "https://github.com/langchain-ai/langchain/pull/40993",
+        "final_score": 85,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No earlier merged contributions found for this repo.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (122 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, agustin18! A maintainer will take a look soon."
+      },
+      {
+        "number": 40405,
+        "title": "test(core): skip prompt-loading symlink tests when symlinks are unavailable",
+        "author": "iam-kira",
+        "url": "https://github.com/langchain-ai/langchain/pull/40405",
+        "final_score": 85,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No earlier merged contributions found for this repo.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (15 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, iam-kira! A maintainer will take a look soon."
+      },
+      {
+        "number": 40338,
+        "title": "feat(anthropic): forward credentials and auth_token to the anthropic client",
+        "author": "Larry-Osakwe",
+        "url": "https://github.com/langchain-ai/langchain/pull/40338",
+        "final_score": 85,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No earlier merged contributions found for this repo.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (106 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, Larry-Osakwe! A maintainer will take a look soon."
+      },
+      {
+        "number": 40312,
+        "title": "fix(langchain): clarify `runtime.tools` test contract",
+        "author": "ChampionsZhang",
+        "url": "https://github.com/langchain-ai/langchain/pull/40312",
+        "final_score": 85,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): Very small change (2 lines), such as a typo or README tweak.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Very small change (2 lines), such as a typo or README tweak."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, ChampionsZhang! A maintainer will take a look soon."
+      },
+      {
+        "number": 40254,
+        "title": "fix(deepseek): preserve reasoning_content in request payload",
+        "author": "tftz-ll",
+        "url": "https://github.com/langchain-ai/langchain/pull/40254",
+        "final_score": 85,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No earlier merged contributions found for this repo.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (93 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, tftz-ll! A maintainer will take a look soon."
+      },
+      {
+        "number": 40213,
+        "title": "fix(core): avoid mutating message content in Anthropic translator",
+        "author": "revanth-045",
+        "url": "https://github.com/langchain-ai/langchain/pull/40213",
+        "final_score": 85,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No earlier merged contributions found for this repo.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (85 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, revanth-045! A maintainer will take a look soon."
+      },
+      {
+        "number": 40147,
+        "title": "fix: handle reasoning model output tags in structured output parsing",
+        "author": "visnu64",
+        "url": "https://github.com/langchain-ai/langchain/pull/40147",
+        "final_score": 85,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No earlier merged contributions found for this repo.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (215 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, visnu64! A maintainer will take a look soon."
+      },
+      {
+        "number": 39912,
+        "title": "fix(core): count image tokens from image dimensions",
+        "author": "saike148",
+        "url": "https://github.com/langchain-ai/langchain/pull/39912",
+        "final_score": 85,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No earlier merged contributions found for this repo.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (505 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, saike148! A maintainer will take a look soon."
+      },
+      {
+        "number": 39823,
+        "title": "fix(text-splitters): recognize custom header patterns when merging nested headers",
+        "author": "dlwldn30",
+        "url": "https://github.com/langchain-ai/langchain/pull/39823",
+        "final_score": 85,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No earlier merged contributions found for this repo.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (217 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, dlwldn30! A maintainer will take a look soon."
+      },
+      {
+        "number": 39740,
+        "title": "fix(anthropic): preserve `response_metadata` when `stream_usage` is disabled",
+        "author": "JessYanCoding",
+        "url": "https://github.com/langchain-ai/langchain/pull/39740",
+        "final_score": 85,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No earlier merged contributions found for this repo.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (80 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, JessYanCoding! A maintainer will take a look soon."
+      },
+      {
+        "number": 41004,
+        "title": "fix(openai): filter foreign reasoning from Responses input",
+        "author": "ccurme",
+        "url": "https://github.com/langchain-ai/langchain/pull/41004",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (47 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, ccurme! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 40988,
+        "title": "fix(openai): normalize content-policy refusal errors",
+        "author": "mdrxy",
+        "url": "https://github.com/langchain-ai/langchain/pull/40988",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (152 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, mdrxy! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 40982,
+        "title": "chore(langchain): model router review edits",
+        "author": "hntrl",
+        "url": "https://github.com/langchain-ai/langchain/pull/40982",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (338 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, hntrl! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 40922,
+        "title": "feat(langchain): add criteria-based model routing middleware",
+        "author": "open-swe[bot]",
+        "url": "https://github.com/langchain-ai/langchain/pull/40922",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (539 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, open-swe[bot]! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 40921,
+        "title": "feat(langchain): add configurable model routing middleware",
+        "author": "sydney-runkle",
+        "url": "https://github.com/langchain-ai/langchain/pull/40921",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (657 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, sydney-runkle! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 40577,
+        "title": "refactor(typesafe): match TypeSafe request input",
+        "author": "sydney-runkle",
+        "url": "https://github.com/langchain-ai/langchain/pull/40577",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (569 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, sydney-runkle! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 40390,
+        "title": "feat(openrouter,fireworks): support `response_format` on invoke and bind_tools",
+        "author": "mdrxy",
+        "url": "https://github.com/langchain-ai/langchain/pull/40390",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (422 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, mdrxy! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 39921,
+        "title": "fix(langchain): filter unsupported model inputs",
+        "author": "mdrxy",
+        "url": "https://github.com/langchain-ai/langchain/pull/39921",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (185 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, mdrxy! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 39884,
+        "title": "feat(openrouter): classify model API errors",
+        "author": "ccurme",
+        "url": "https://github.com/langchain-ai/langchain/pull/39884",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (439 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, ccurme! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 39788,
+        "title": "fix(langchain): drop foreign provider built-in tools on model fallback",
+        "author": "ramon-langchain",
+        "url": "https://github.com/langchain-ai/langchain/pull/39788",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (359 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, ramon-langchain! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 39721,
+        "title": "feat(core): update llm trace metadata based on gateway information",
+        "author": "eyurtsev",
+        "url": "https://github.com/langchain-ai/langchain/pull/39721",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (99 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, eyurtsev! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 39605,
+        "title": "feat(model-profiles): add `check-augmentations` CI command and `[extra_models]` table for stale override detection",
+        "author": "mdrxy",
+        "url": "https://github.com/langchain-ai/langchain/pull/39605",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (597 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, mdrxy! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 39057,
+        "title": "fix(core): memoize `convert_to_openai_tool` per tool instance",
+        "author": "imnishitha",
+        "url": "https://github.com/langchain-ai/langchain/pull/39057",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (261 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, imnishitha! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 38860,
+        "title": "fix(openai): route reasoning tool calls to Responses API",
+        "author": "mdrxy",
+        "url": "https://github.com/langchain-ai/langchain/pull/38860",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (244 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, mdrxy! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 39303,
+        "title": "fix(core): correct operator validation error wording",
+        "author": "iroiro147",
+        "url": "https://github.com/langchain-ai/langchain/pull/39303",
+        "final_score": 70,
+        "tier": "Review first",
+        "reason": "Rule checks only (AI review unavailable): No test files changed; Very small change (2 lines), such as a typo or README tweak.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Very small change (2 lines), such as a typo or README tweak."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, iroiro147! To help us review it, could you add or update a test that covers the change? Happy to take another look once that's in."
+      },
+      {
+        "number": 40925,
+        "title": "docs: update OpenWiki",
+        "author": "github-actions[bot]",
+        "url": "https://github.com/langchain-ai/langchain/pull/40925",
+        "final_score": 65,
+        "tier": "Needs info",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found; No test files changed.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (395 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, github-actions[bot]! To help us review it, could you link the related issue (or open one to discuss the change); add or update a test that covers the change? Happy to take another look once that's in."
+      },
+      {
+        "number": 40832,
+        "title": "feat(core): support langsmith agent addressing in `LangChainTracer`",
+        "author": "KiewanVillatel",
+        "url": "https://github.com/langchain-ai/langchain/pull/40832",
+        "final_score": 65,
+        "tier": "Needs info",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found; No earlier merged contributions found for this repo.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (230 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, KiewanVillatel! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 40813,
+        "title": "feat(typesafe): select SemIf for `TsHybridToolSelectorMiddleware`",
+        "author": "thushanth-bengre-langchain",
+        "url": "https://github.com/langchain-ai/langchain/pull/40813",
+        "final_score": 65,
+        "tier": "Needs info",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found; No earlier merged contributions found for this repo.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (84 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, thushanth-bengre-langchain! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 40812,
+        "title": "feat(typesafe): select SemIf for `TsChoiceToolSelectorMiddleware`",
+        "author": "thushanth-bengre-langchain",
+        "url": "https://github.com/langchain-ai/langchain/pull/40812",
+        "final_score": 65,
+        "tier": "Needs info",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found; No earlier merged contributions found for this repo.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (45 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, thushanth-bengre-langchain! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 40811,
+        "title": "feat(typesafe): select SemIf for `TsToolSelectorMiddleware`",
+        "author": "thushanth-bengre-langchain",
+        "url": "https://github.com/langchain-ai/langchain/pull/40811",
+        "final_score": 65,
+        "tier": "Needs info",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found; No earlier merged contributions found for this repo.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (23 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, thushanth-bengre-langchain! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 40801,
+        "title": "feat(typesafe): experimental add `TsHybridToolSelectorMiddleware`",
+        "author": "thushanth-bengre-langchain",
+        "url": "https://github.com/langchain-ai/langchain/pull/40801",
+        "final_score": 65,
+        "tier": "Needs info",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found; No earlier merged contributions found for this repo.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (459 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, thushanth-bengre-langchain! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 40799,
+        "title": "feat(typesafe): experimental classifier based `TsChoiceToolSelectorMiddleware`",
+        "author": "thushanth-bengre-langchain",
+        "url": "https://github.com/langchain-ai/langchain/pull/40799",
+        "final_score": 65,
+        "tier": "Needs info",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found; No earlier merged contributions found for this repo.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (223 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, thushanth-bengre-langchain! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 40722,
+        "title": "feat(langchain): MCP Apps (SEP-1865) tool visibility in langchain.mcp",
+        "author": "josiahcoad-langchain",
+        "url": "https://github.com/langchain-ai/langchain/pull/40722",
+        "final_score": 65,
+        "tier": "Needs info",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found; No earlier merged contributions found for this repo.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (327 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, josiahcoad-langchain! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 40572,
+        "title": "feat(typesafe): experimental classifier based TsToolSelectorMiddleware",
+        "author": "thushanth-bengre-langchain",
+        "url": "https://github.com/langchain-ai/langchain/pull/40572",
+        "final_score": 65,
+        "tier": "Needs info",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found; No earlier merged contributions found for this repo.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (616 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, thushanth-bengre-langchain! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 40556,
+        "title": "feat(typesafe): agent middleware powered by TypeSafe classifiers",
+        "author": "sydney-runkle",
+        "url": "https://github.com/langchain-ai/langchain/pull/40556",
+        "final_score": 65,
+        "tier": "Needs info",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found; Large diff (5712 lines), which can be hard to review in one PR.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Large diff (5712 lines), which can be hard to review in one PR."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, sydney-runkle! To help us review it, could you link the related issue (or open one to discuss the change); consider splitting this into smaller PRs? Happy to take another look once that's in."
+      },
+      {
+        "number": 40550,
+        "title": "refactor(typesafe): mirror SDK request and client configuration",
+        "author": "sydney-runkle",
+        "url": "https://github.com/langchain-ai/langchain/pull/40550",
+        "final_score": 65,
+        "tier": "Needs info",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found; Large diff (4737 lines), which can be hard to review in one PR.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Large diff (4737 lines), which can be hard to review in one PR."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, sydney-runkle! To help us review it, could you link the related issue (or open one to discuss the change); consider splitting this into smaller PRs? Happy to take another look once that's in."
+      },
+      {
+        "number": 40283,
+        "title": "fix(standard-tests): align sandbox contract assertions",
+        "author": "npentrel",
+        "url": "https://github.com/langchain-ai/langchain/pull/40283",
+        "final_score": 65,
+        "tier": "Needs info",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found; No test files changed.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (52 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, npentrel! To help us review it, could you link the related issue (or open one to discuss the change); add or update a test that covers the change? Happy to take another look once that's in."
+      },
+      {
+        "number": 39266,
+        "title": "fix(core): validate score_threshold range in VectorStoreRetriever",
+        "author": "bansalkanav",
+        "url": "https://github.com/langchain-ai/langchain/pull/39266",
+        "final_score": 65,
+        "tier": "Needs info",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found; No test files changed.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (6 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, bansalkanav! To help us review it, could you link the related issue (or open one to discuss the change); add or update a test that covers the change? Happy to take another look once that's in."
+      },
+      {
+        "number": 40655,
+        "title": "Langchain voice",
+        "author": "carolinedivittorio",
+        "url": "https://github.com/langchain-ai/langchain/pull/40655",
+        "final_score": 50,
+        "tier": "Needs info",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found; Large diff (6326 lines), which can be hard to review in one PR; No earlier merged contributions found for this repo.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Large diff (6326 lines), which can be hard to review in one PR."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, carolinedivittorio! To help us review it, could you link the related issue (or open one to discuss the change); consider splitting this into smaller PRs? Happy to take another look once that's in."
+      },
+      {
+        "number": 39652,
+        "title": "style: upgrade to ruff 0.16, mypy 2.3, ty 0.0.78",
+        "author": "cbornet",
+        "url": "https://github.com/langchain-ai/langchain/pull/39652",
+        "final_score": 50,
+        "tier": "Needs info",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found; Description is empty; PR template left mostly blank.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": false,
+            "note": "Description is empty."
+          },
+          "template_filled": {
+            "passed": false,
+            "note": "PR template left mostly blank."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (918 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, cbornet! To help us review it, could you link the related issue (or open one to discuss the change); add a short description of what this changes and why; fill in the PR template? Happy to take another look once that's in."
+      },
+      {
+        "number": 39053,
+        "title": "feat(standard-tests): replace mypy by ty for type checking",
+        "author": "cbornet",
+        "url": "https://github.com/langchain-ai/langchain/pull/39053",
+        "final_score": 50,
+        "tier": "Needs info",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found; Description is empty; PR template left mostly blank.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": false,
+            "note": "Description is empty."
+          },
+          "template_filled": {
+            "passed": false,
+            "note": "PR template left mostly blank."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (380 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, cbornet! To help us review it, could you link the related issue (or open one to discuss the change); add a short description of what this changes and why; fill in the PR template? Happy to take another look once that's in."
+      },
+      {
+        "number": 39019,
+        "title": "feat(langchain): add subagent middleware",
+        "author": "hntrl",
+        "url": "https://github.com/langchain-ai/langchain/pull/39019",
+        "final_score": 45,
+        "tier": "Needs info",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found; Description is very short; Large diff (3845 lines), which can be hard to review in one PR.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": false,
+            "note": "Description is very short."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Large diff (3845 lines), which can be hard to review in one PR."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, hntrl! To help us review it, could you link the related issue (or open one to discuss the change); add a short description of what this changes and why; consider splitting this into smaller PRs? Happy to take another look once that's in."
+      },
+      {
+        "number": 40544,
+        "title": "feat(typesafe): experimental classifier based `SkillsMiddleware`",
+        "author": "hntrl",
+        "url": "https://github.com/langchain-ai/langchain/pull/40544",
+        "final_score": 35,
+        "tier": "Likely low-effort",
+        "reason": "Rule checks only (AI review unavailable): No linked issue found; Description is empty; PR template left mostly blank.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": false,
+            "note": "Description is empty."
+          },
+          "template_filled": {
+            "passed": false,
+            "note": "PR template left mostly blank."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Large diff (1129 lines), which can be hard to review in one PR."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, hntrl! To help us review it, could you link the related issue (or open one to discuss the change); add a short description of what this changes and why; fill in the PR template; consider splitting this into smaller PRs? Happy to take another look once that's in."
+      }
+    ],
+    "_limit": 50
   }
 }

@@ -9,6 +9,7 @@ on, a cached repo loads instantly (with a short fake progress animation); otherw
 """
 import html
 import importlib
+import inspect
 import json
 import re
 import time
@@ -379,6 +380,14 @@ def style_fig(fig, height=300):
     return fig
 
 
+def show_chart(fig):
+    """Full-width, themed Plotly chart. Streamlit renamed the sizing argument between versions."""
+    if "width" in inspect.signature(st.plotly_chart).parameters:
+        st.plotly_chart(style_fig(fig), width="stretch")
+    else:
+        st.plotly_chart(style_fig(fig), use_container_width=True)
+
+
 def section(title):
     st.markdown(f'<h4 style="margin:1.4rem 0 .3rem">{title}</h4>', unsafe_allow_html=True)
 
@@ -421,12 +430,12 @@ with tab_insights:
                 fig = px.pie(counts, names="tier", values="count", hole=0.62,
                              color="tier", color_discrete_map=TIER_COLORS)
                 fig.update_traces(textinfo="value", sort=False)
-                st.plotly_chart(style_fig(fig), width="stretch")
+                show_chart(fig)
             with right:
                 section("Effort score distribution")
                 fig = px.histogram(d, x="final_score", nbins=10, color="tier",
                                    category_orders={"tier": TIER_ORDER}, color_discrete_map=TIER_COLORS)
-                st.plotly_chart(style_fig(fig), width="stretch")
+                show_chart(fig)
 
             section("Most common failed checks")
             fails = d["failed_checks"].str.split(",").explode()
@@ -434,7 +443,7 @@ with tab_insights:
             fails = fails.value_counts().sort_values().reset_index()
             fails.columns = ["check", "count"]
             fig = px.bar(fails, x="count", y="check", orientation="h", color_discrete_sequence=[ACCENT])
-            st.plotly_chart(style_fig(fig), width="stretch")
+            show_chart(fig)
 
             section("20 most recent scored PRs")
             st.dataframe(
