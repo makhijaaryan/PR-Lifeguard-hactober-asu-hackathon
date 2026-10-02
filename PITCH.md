@@ -16,7 +16,7 @@ PR Lifeguard rescues open-source maintainers from low-effort pull requests. It s
 - Seven transparent rule checks: linked issue, description, template filled, tests touched, sensible size, account age, returning contributor.
 - An open-weight LLM (gpt-oss-120b, falling back to Qwen) reads the description, the diff excerpt and the contributing guide: guideline fit, whether the description matches the code, and a polite draft reply.
 - Score = 50% rule checks + 50% LLM effort score, so every number has visible reasons.
-- Results are saved (Snowflake, or local SQLite if Snowflake is unreachable) and feed the Insights tab.
+- Every result is saved to Snowflake and feeds the Insights tab (local SQLite only if Snowflake is unreachable).
 
 ## 3. Live demo (90s)
 Start with `./dev.sh`, open http://localhost:3000 (landing page: problem, scoring, architecture), click **Open the app**, and keep **Offline demo** on (navbar) so nothing depends on conference wifi. Cached repos replay in about two seconds.
@@ -30,7 +30,7 @@ Start with `./dev.sh`, open http://localhost:3000 (landing page: problem, scorin
 
 ## 4. Why it fits the theme and the sponsor (20s)
 - Open-source AI used to protect open source, not flood it. Only open-weight models.
-- Every scored PR lands in a `PR_SCORES` table (Snowflake when configured, local SQLite otherwise) that powers the trends view across runs and repos.
+- Snowflake is the system of record: every scored PR lands in a `PR_SCORES` table that powers the Insights trends across runs and repos. The navbar shows "Snowflake" live.
 - Scores come from explainable checks plus an LLM, so maintainers can trust them and contributors can learn from them.
 
 ## 5. Close (10s)
@@ -42,7 +42,7 @@ Start with `./dev.sh`, open http://localhost:3000 (landing page: problem, scorin
 - **Will it auto-close PRs?** No. It only drafts replies. The maintainer stays in control.
 - **What if the model is down or rate limited?** It switches to the second model, and if both fail it scores from the rule checks alone and says so in the reason. Storage falls back to SQLite. The navbar shows which model and storage are in use.
 - **Does the model see the code?** Yes, a diff excerpt (first ~1500 chars). It is told never to claim anything it cannot see in the excerpt.
-- **What next?** A GitHub Action that comments on new PRs automatically, per-repo rule tuning, and Snowflake as the default store for shared team dashboards.
+- **What next?** A GitHub Action that comments on new PRs automatically, per-repo rule tuning, and shared team dashboards on top of the Snowflake data.
 
 ## Demo checklist
 - [ ] `./dev.sh` starts cleanly; http://localhost:3000 (landing) and /app load

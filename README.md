@@ -26,7 +26,7 @@ Copy `.streamlit/secrets.toml.example` to `.streamlit/secrets.toml` and fill in:
 |---|---|---|
 | `[llm]` | `base_url`, `api_key`, `model`, `fallback_model` | Any OpenAI-compatible endpoint. We use Groq with `openai/gpt-oss-120b`, falling back to `qwen/qwen3.8-27b`. |
 | `[github]` | `token` | GitHub REST API (5,000 requests/hour instead of 60). |
-| `[snowflake]` | `account`, `user`, `api_key` (PAT), `warehouse`, `database`, `schema`, `role` | Optional. Results go to Snowflake when it connects, otherwise to local SQLite (`pr_lifeguard.db`). |
+| `[snowflake]` | `account`, `user`, `api_key` (PAT), `warehouse`, `database`, `schema`, `role` | Where every scored PR is stored (`PR_SCORES`), and what the Insights tab reads. If Snowflake is unreachable, the app falls back to local SQLite (`pr_lifeguard.db`). |
 
 The secrets file is gitignored and is the only place keys live.
 

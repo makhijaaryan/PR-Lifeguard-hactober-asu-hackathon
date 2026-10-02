@@ -43,7 +43,7 @@ const PRINCIPLES = [
 const RELIABILITY = [
   ["Two models", "On a rate limit, gpt-oss-120b hands off to Qwen with its own budget."],
   ["Rule-only fallback", "If both models are down, PRs are still scored from the seven checks, and the reason says so."],
-  ["Storage fallback", "Results go to Snowflake when connected, local SQLite otherwise."],
+  ["Storage fallback", "Every run is saved to Snowflake. If it is unreachable, local SQLite takes over."],
   ["Offline demo", "Cached runs replay with no internet and no API keys."],
   ["Live progress", "Triage streams each step over Server-Sent Events, 4 PRs scored in parallel."],
 ];
@@ -52,7 +52,7 @@ const STACK = [
   { title: "Web app", items: ["Next.js App Router + TypeScript", "Tailwind + shadcn/ui", "Geist Sans & Mono, Recharts"] },
   { title: "API", items: ["FastAPI", "Server-Sent Events progress", "Offline demo cache"] },
   { title: "Engine", items: ["GitHub REST: PRs, diffs, guides", "7 rule checks + LLM review", "openai/gpt-oss-120b via Groq"] },
-  { title: "Storage", items: ["PR_SCORES table", "Snowflake (optional)", "SQLite fallback"] },
+  { title: "Storage", items: ["Snowflake PR_SCORES table", "Powers the Insights dashboard", "SQLite fallback"] },
 ];
 
 export default function Landing() {
