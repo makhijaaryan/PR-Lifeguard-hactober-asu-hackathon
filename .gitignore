@@ -1,5 +1,21 @@
+# secrets
 .streamlit/secrets.toml
+.env
+.env.*
+
+# local data
 *.db
+demo_cache.tmp
+
+# python
 __pycache__/
 .venv/
-# demo_cache.json is intentionally committed
+
+# web
+node_modules/
+.next/
+web/out/
+*.tsbuildinfo
+.DS_Store
+
+# demo_cache.json is intentionally committed (offline demo data)

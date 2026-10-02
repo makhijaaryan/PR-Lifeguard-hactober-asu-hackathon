@@ -4,3 +4,5 @@ snowflake-connector-python
 pandas
 plotly
 toml
+fastapi
+uvicorn

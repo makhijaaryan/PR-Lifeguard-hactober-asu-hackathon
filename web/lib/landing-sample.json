@@ -1,0 +1,262 @@
+{
+  "_note": "Real results copied from demo_cache.json by the landing page build step. Do not edit by hand.",
+  "preview": [
+    {
+      "number": 184049,
+      "title": "Add restart and reboot required triggers and conditions",
+      "author": "frenck",
+      "url": "https://github.com/home-assistant/core/pull/184049",
+      "final_score": 98,
+      "tier": "Review first",
+      "reason": "The PR is by an established member, includes a detailed technical description with specific behavioral nuances, depends on other PRs, and includes corresponding tests for all new triggers and conditions.",
+      "rule_flags": {
+        "links_issue": {
+          "passed": true,
+          "note": "Links an issue."
+        },
+        "has_description": {
+          "passed": true,
+          "note": "Description provided."
+        },
+        "template_filled": {
+          "passed": true,
+          "note": "Template filled out."
+        },
+        "touches_tests": {
+          "passed": true,
+          "note": "Tests added or updated."
+        },
+        "size_ok": {
+          "passed": true,
+          "note": "Reasonably sized diff (464 lines)."
+        },
+        "account_age_ok": {
+          "passed": true,
+          "note": "Established account."
+        },
+        "returning_contributor": {
+          "passed": true,
+          "note": "Has prior contributions to this repo."
+        }
+      },
+      "guideline_issues": [],
+      "description_matches_code": {
+        "value": true,
+        "note": "The file names directly correspond to the described changes (trigger.py, condition.py, YAML schemas, and tests), and the description accurately reflects the code size and scope."
+      },
+      "draft_reply": "Thanks for this contribution, frenck! The description clearly explains the behavior and dependencies, which will help with the review process. I\u2019ll keep an eye on the linked PRs (#184046 and #184047) to ensure this can be merged in the right order."
+    },
+    {
+      "number": 125909,
+      "title": "Add Jitendra1419-UI to Contributors list",
+      "author": "Jitendra1419-UI",
+      "url": "https://github.com/firstcontributions/first-contributions/pull/125909",
+      "final_score": 60,
+      "tier": "Needs info",
+      "reason": "Adds a contributor entry but includes a large formatting diff and lacks a linked issue.",
+      "rule_flags": {
+        "links_issue": {
+          "passed": false,
+          "note": "No linked issue found."
+        },
+        "has_description": {
+          "passed": true,
+          "note": "Description provided."
+        },
+        "template_filled": {
+          "passed": true,
+          "note": "Template filled out."
+        },
+        "touches_tests": {
+          "passed": true,
+          "note": "Docs-only change, tests not expected."
+        },
+        "size_ok": {
+          "passed": true,
+          "note": "Reasonably sized diff (918 lines)."
+        },
+        "account_age_ok": {
+          "passed": true,
+          "note": "Established account."
+        },
+        "returning_contributor": {
+          "passed": false,
+          "note": "No earlier merged contributions found for this repo."
+        }
+      },
+      "guideline_issues": [
+        "Keep pull requests small. A pull request that has one file change is way easier to review than 20 files."
+      ],
+      "description_matches_code": {
+        "value": true,
+        "note": "Based on the title and description, the change appears to add the contributor as described."
+      },
+      "draft_reply": "Thank you for adding yourself to the Contributors list! Could you please link this PR to an open issue or open a new one describing the change? Also, try to keep the diff limited to only the necessary additions to avoid large formatting changes. Looking forward to merging this soon."
+    },
+    {
+      "number": 125872,
+      "title": "My first contribution",
+      "author": "joeuser-max",
+      "url": "https://github.com/firstcontributions/first-contributions/pull/125872",
+      "final_score": 35,
+      "tier": "Likely low-effort",
+      "reason": "The PR modifies only the checklists in the description with no meaningful code changes and fails to follow the specific guideline against changing Readme.md if that file were involved, but primarily it is a minimal first-contribution placeholder that lacks a linked issue.",
+      "rule_flags": {
+        "links_issue": {
+          "passed": false,
+          "note": "No linked issue found."
+        },
+        "has_description": {
+          "passed": true,
+          "note": "Description provided."
+        },
+        "template_filled": {
+          "passed": false,
+          "note": "PR template left mostly blank."
+        },
+        "touches_tests": {
+          "passed": true,
+          "note": "Docs-only change, tests not expected."
+        },
+        "size_ok": {
+          "passed": true,
+          "note": "Reasonably sized diff (7 lines)."
+        },
+        "account_age_ok": {
+          "passed": true,
+          "note": "Established account."
+        },
+        "returning_contributor": {
+          "passed": false,
+          "note": "No earlier merged contributions found for this repo."
+        }
+      },
+      "guideline_issues": [
+        "Don't make changes in Readme.md",
+        "Keep pull requests small (though this is small, the intent is unclear without a linked issue)",
+        "Look for issues that maintainers have labeled as 'help wanted' or 'good first issue'"
+      ],
+      "description_matches_code": {
+        "value": true,
+        "note": "The diff is tiny and touches Contributors.md, which is standard for this repo's onboarding flow; the description matches a first-contribution checklist."
+      },
+      "draft_reply": "Thanks for taking the time to contribute! It looks like this is your first pull request, so we're excited to have you. Could you please link this PR to the specific issue you're addressing, or describe the change you're making in more detail? This will help us review it more easily."
+    },
+    {
+      "number": 125874,
+      "title": "first-contributions",
+      "author": "ravenclue",
+      "url": "https://github.com/firstcontributions/first-contributions/pull/125874",
+      "final_score": 28,
+      "tier": "Likely low-effort",
+      "reason": "The PR is a minimal one-line addition to Contributors.md, which is the specific and expected change for this tutorial repository.",
+      "rule_flags": {
+        "links_issue": {
+          "passed": false,
+          "note": "No linked issue found."
+        },
+        "has_description": {
+          "passed": true,
+          "note": "Description provided."
+        },
+        "template_filled": {
+          "passed": false,
+          "note": "PR template left mostly blank."
+        },
+        "touches_tests": {
+          "passed": true,
+          "note": "Docs-only change, tests not expected."
+        },
+        "size_ok": {
+          "passed": false,
+          "note": "Very small change (2 lines), such as a typo or README tweak."
+        },
+        "account_age_ok": {
+          "passed": true,
+          "note": "Established account."
+        },
+        "returning_contributor": {
+          "passed": false,
+          "note": "No earlier merged contributions found for this repo."
+        }
+      },
+      "guideline_issues": [],
+      "description_matches_code": {
+        "value": true,
+        "note": "The change to Contributors.md aligns with the purpose of the first-contributions tutorial, where adding a name is the primary task."
+      },
+      "draft_reply": "Thank you for completing the first-contributions tutorial! Your PR looks good and follows the expected format for this specific exercise. We appreciate you joining the community, and we hope you enjoy exploring other open-source projects in the future."
+    }
+  ],
+  "reply_example": {
+    "number": 125872,
+    "title": "My first contribution",
+    "author": "joeuser-max",
+    "url": "https://github.com/firstcontributions/first-contributions/pull/125872",
+    "final_score": 35,
+    "tier": "Likely low-effort",
+    "reason": "The PR modifies only the checklists in the description with no meaningful code changes and fails to follow the specific guideline against changing Readme.md if that file were involved, but primarily it is a minimal first-contribution placeholder that lacks a linked issue.",
+    "rule_flags": {
+      "links_issue": {
+        "passed": false,
+        "note": "No linked issue found."
+      },
+      "has_description": {
+        "passed": true,
+        "note": "Description provided."
+      },
+      "template_filled": {
+        "passed": false,
+        "note": "PR template left mostly blank."
+      },
+      "touches_tests": {
+        "passed": true,
+        "note": "Docs-only change, tests not expected."
+      },
+      "size_ok": {
+        "passed": true,
+        "note": "Reasonably sized diff (7 lines)."
+      },
+      "account_age_ok": {
+        "passed": true,
+        "note": "Established account."
+      },
+      "returning_contributor": {
+        "passed": false,
+        "note": "No earlier merged contributions found for this repo."
+      }
+    },
+    "guideline_issues": [
+      "Don't make changes in Readme.md",
+      "Keep pull requests small (though this is small, the intent is unclear without a linked issue)",
+      "Look for issues that maintainers have labeled as 'help wanted' or 'good first issue'"
+    ],
+    "description_matches_code": {
+      "value": true,
+      "note": "The diff is tiny and touches Contributors.md, which is standard for this repo's onboarding flow; the description matches a first-contribution checklist."
+    },
+    "draft_reply": "Thanks for taking the time to contribute! It looks like this is your first pull request, so we're excited to have you. Could you please link this PR to the specific issue you're addressing, or describe the change you're making in more detail? This will help us review it more easily."
+  },
+  "compare": [
+    {
+      "repo": "firstcontributions/first-contributions",
+      "total": 12,
+      "tiers": {
+        "Review first": 0,
+        "Needs info": 8,
+        "Likely low-effort": 4
+      },
+      "avg": 44
+    },
+    {
+      "repo": "home-assistant/core",
+      "total": 12,
+      "tiers": {
+        "Review first": 11,
+        "Needs info": 1,
+        "Likely low-effort": 0
+      },
+      "avg": 81
+    }
+  ]
+}

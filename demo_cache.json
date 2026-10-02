@@ -4272,5 +4272,246 @@
       }
     ],
     "_limit": 50
+  },
+  "pallets/click": {
+    "repo": "pallets/click",
+    "run_id": "4306c744c5d6",
+    "model_used": "openai/gpt-oss-120b",
+    "storage_backend": "Snowflake",
+    "prs": [
+      {
+        "number": 3827,
+        "title": "Require a parameter name to be a non-keyword Python identifier",
+        "author": "kdeldycke",
+        "url": "https://github.com/pallets/click/pull/3827",
+        "final_score": 98,
+        "tier": "Review first",
+        "reason": "The contributor provided a comprehensive description, detailed migration guide, CHANGES.md entry, extensive tests, and updated documentation to support the breaking API change.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (769 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The diff shows updates to CHANGES.md and docs/arguments.md that align with the description's summary of the behavioral changes and keyword handling."
+        },
+        "draft_reply": "Thank you for this thorough PR and the clear explanation of the breaking changes. The description and migration guide are excellent, and the test coverage looks solid. I will review the code logic closely to ensure the normalization behavior matches the previous deprecation cycle's intent before merging once we are ready for the 9.x cycle."
+      },
+      {
+        "number": 3880,
+        "title": "Split `PAGER` and `EDITOR` with a Windows-specific `shlex` equivalent",
+        "author": "kdeldycke",
+        "url": "https://github.com/pallets/click/pull/3880",
+        "final_score": 90,
+        "tier": "Review first",
+        "reason": "The PR introduces a sizable new function, updates documentation, and adds tests.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (223 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The changes implement the described Windows command splitting and update CHANGES accordingly."
+        },
+        "draft_reply": "Thank you for the thorough contribution! The new Windows\u2011specific splitting logic and the accompanying tests look good. Could you add a short note to the documentation about this behavior and confirm it doesn't affect existing shell completion on non\u2011Windows platforms?"
+      },
+      {
+        "number": 3878,
+        "title": "Add `CliRunner.echo_stdin_class` to override the `<stdin>` echo wrapper",
+        "author": "kdeldycke",
+        "url": "https://github.com/pallets/click/pull/3878",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "The PR adds a new attribute with code, documentation, changelog, and tests, showing clear effort.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (55 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [
+          "Missing linked issue in the PR description"
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "The description of adding `CliRunner.echo_stdin_class` aligns with the diff changes."
+        },
+        "draft_reply": "Thank you for the contribution! The changes look solid and add useful functionality. Could you please link the related issue in the description so we can track it properly? Once that's added, we can move forward with reviewing."
+      },
+      {
+        "number": 3877,
+        "title": "Add `Parameter.spec` and deprecate `human_readable_name`",
+        "author": "kdeldycke",
+        "url": "https://github.com/pallets/click/pull/3877",
+        "final_score": 80,
+        "tier": "Review first",
+        "reason": "The PR introduces new functionality, updates documentation, and adds tests across multiple files.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (292 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [
+          "No linked issue found"
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "Title and description correspond to the added spec attribute and deprecation changes visible in the diff."
+        },
+        "draft_reply": "Thank you for the detailed PR and for adding tests and documentation! Could you please link the relevant issue or provide a brief reference so we can track this change? Once that's added, we'll be able to move forward with review."
+      },
+      {
+        "number": 3859,
+        "title": "Add pyrefly type checking",
+        "author": "MarcoGorelli",
+        "url": "https://github.com/pallets/click/pull/3859",
+        "final_score": 58,
+        "tier": "Needs info",
+        "reason": "The PR adds configuration for pyrefly and makes minor type\u2011related code adjustments, showing moderate effort.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (58 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [
+          "Missing linked issue",
+          "No tests added"
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "The title and description about adding pyrefly type checking align with the added pyrefly config and type hint changes."
+        },
+        "draft_reply": "Thank you for the contribution! Could you please link the relevant issue or provide a brief description of the problem this addresses? Also, adding tests that demonstrate the new type\u2011checking behavior would help ensure everything works as expected."
+      }
+    ],
+    "_limit": 5
   }
 }
