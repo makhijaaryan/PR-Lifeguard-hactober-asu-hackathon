@@ -1,0 +1,5 @@
+.streamlit/secrets.toml
+*.db
+__pycache__/
+.venv/
+# demo_cache.json is intentionally committed
