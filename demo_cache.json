@@ -1,0 +1,784 @@
+{
+  "pallets/flask": {
+    "repo": "pallets/flask",
+    "run_id": "01bdf79c32ac",
+    "model_used": "none (rule checks only)",
+    "storage_backend": "Snowflake",
+    "prs": [
+      {
+        "number": 5918,
+        "title": "automatic options as separate route",
+        "author": "davidism",
+        "url": "https://github.com/pallets/flask/pull/5918",
+        "final_score": 100,
+        "tier": "Review first",
+        "reason": "Scored from rule checks only. All rule checks passed.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (86 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, davidism! A maintainer will take a look soon."
+      },
+      {
+        "number": 5660,
+        "title": "Move parts of the session code to sansio",
+        "author": "pgjones",
+        "url": "https://github.com/pallets/flask/pull/5660",
+        "final_score": 65,
+        "tier": "Needs info",
+        "reason": "Scored from rule checks only. Flagged: links issue, touches tests.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (428 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, pgjones! To help us review it, could you link the related issue (or open one to discuss the change); add or update a test that covers the change? Happy to take another look once that's in."
+      },
+      {
+        "number": 5665,
+        "title": "Workflow",
+        "author": "pgjones",
+        "url": "https://github.com/pallets/flask/pull/5665",
+        "final_score": 35,
+        "tier": "Likely low-effort",
+        "reason": "Scored from rule checks only. Flagged: links issue, has description, template filled, touches tests.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": false,
+            "note": "Description is empty."
+          },
+          "template_filled": {
+            "passed": false,
+            "note": "PR template left mostly blank."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (26 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, pgjones! To help us review it, could you link the related issue (or open one to discuss the change); add a short description of what this changes and why; fill in the PR template; add or update a test that covers the change? Happy to take another look once that's in."
+      }
+    ]
+  },
+  "ubuntu/gnome-shell-extension-appindicator": {
+    "repo": "ubuntu/gnome-shell-extension-appindicator",
+    "run_id": "caa5e5614e46",
+    "model_used": "none (rule checks only)",
+    "storage_backend": "Snowflake",
+    "prs": [
+      {
+        "number": 667,
+        "title": "appIndicator: Guarantee the last icon update paints",
+        "author": "everyx",
+        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/667",
+        "final_score": 85,
+        "tier": "Review first",
+        "reason": "Scored from rule checks only. Flagged: touches tests.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Repo has no PR template."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (210 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, everyx! To help us review it, could you add or update a test that covers the change? Happy to take another look once that's in."
+      },
+      {
+        "number": 657,
+        "title": "dbusMenu: guard _replaceSelf() against stale signals on detached items, fix obsolete St.Widget.add()",
+        "author": "willy059",
+        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/657",
+        "final_score": 70,
+        "tier": "Review first",
+        "reason": "Scored from rule checks only. Flagged: touches tests, returning contributor.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Repo has no PR template."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (14 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, willy059! To help us review it, could you add or update a test that covers the change? Happy to take another look once that's in."
+      },
+      {
+        "number": 625,
+        "title": "indicatorStatusIcon: Add hide mode to toggle visibility of individual tray icons",
+        "author": "elkh510",
+        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/625",
+        "final_score": 70,
+        "tier": "Review first",
+        "reason": "Scored from rule checks only. Flagged: touches tests, returning contributor.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Repo has no PR template."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (967 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, elkh510! To help us review it, could you add or update a test that covers the change? Happy to take another look once that's in."
+      },
+      {
+        "number": 312,
+        "title": "Add indicator for recent icon IDs in prefs dialog",
+        "author": "Finii",
+        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/312",
+        "final_score": 65,
+        "tier": "Needs info",
+        "reason": "Scored from rule checks only. Flagged: links issue, touches tests.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Repo has no PR template."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (53 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, Finii! To help us review it, could you link the related issue (or open one to discuss the change); add or update a test that covers the change? Happy to take another look once that's in."
+      },
+      {
+        "number": 552,
+        "title": "Change default icon size to 20 so they aren't defacto invisible",
+        "author": "ahydronous",
+        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/552",
+        "final_score": 55,
+        "tier": "Needs info",
+        "reason": "Scored from rule checks only. Flagged: touches tests, size ok, returning contributor.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Repo has no PR template."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Very small change (2 lines), such as a typo or README tweak."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, ahydronous! To help us review it, could you add or update a test that covers the change? Happy to take another look once that's in."
+      },
+      {
+        "number": 361,
+        "title": "indicatorStatusIcon: fix status icon location",
+        "author": "fflewddur",
+        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/361",
+        "final_score": 55,
+        "tier": "Needs info",
+        "reason": "Scored from rule checks only. Flagged: touches tests, size ok, returning contributor.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Repo has no PR template."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Very small change (2 lines), such as a typo or README tweak."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, fflewddur! To help us review it, could you add or update a test that covers the change? Happy to take another look once that's in."
+      },
+      {
+        "number": 674,
+        "title": "PR: Handle Wine tray clicks without a DBusMenu",
+        "author": "ychromosome",
+        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/674",
+        "final_score": 50,
+        "tier": "Needs info",
+        "reason": "Scored from rule checks only. Flagged: links issue, touches tests, returning contributor.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Repo has no PR template."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (41 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, ychromosome! To help us review it, could you link the related issue (or open one to discuss the change); add or update a test that covers the change? Happy to take another look once that's in."
+      },
+      {
+        "number": 673,
+        "title": "Keep long custom icon paths from widening preferences",
+        "author": "wrobelda",
+        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/673",
+        "final_score": 50,
+        "tier": "Needs info",
+        "reason": "Scored from rule checks only. Flagged: links issue, touches tests, returning contributor.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Repo has no PR template."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (36 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, wrobelda! To help us review it, could you link the related issue (or open one to discuss the change); add or update a test that covers the change? Happy to take another look once that's in."
+      },
+      {
+        "number": 640,
+        "title": "preferences: give pages explicit, namespaced GTypeNames",
+        "author": "ThorOdinson246",
+        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/640",
+        "final_score": 50,
+        "tier": "Needs info",
+        "reason": "Scored from rule checks only. Flagged: links issue, touches tests, returning contributor.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Repo has no PR template."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (12 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, ThorOdinson246! To help us review it, could you link the related issue (or open one to discuss the change); add or update a test that covers the change? Happy to take another look once that's in."
+      },
+      {
+        "number": 607,
+        "title": "Fix SIGSEGV crash in _getActivationToken when appInfo is null",
+        "author": "doziedotdev",
+        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/607",
+        "final_score": 50,
+        "tier": "Needs info",
+        "reason": "Scored from rule checks only. Flagged: links issue, touches tests, returning contributor.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Repo has no PR template."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (9 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, doziedotdev! To help us review it, could you link the related issue (or open one to discuss the change); add or update a test that covers the change? Happy to take another look once that's in."
+      },
+      {
+        "number": 424,
+        "title": "Remove the Wayland note",
+        "author": "orowith2os",
+        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/424",
+        "final_score": 50,
+        "tier": "Needs info",
+        "reason": "Scored from rule checks only. Flagged: links issue, size ok, returning contributor.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Repo has no PR template."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": false,
+            "note": "Very small change (2 lines), such as a typo or README tweak."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, orowith2os! To help us review it, could you link the related issue (or open one to discuss the change)? Happy to take another look once that's in."
+      },
+      {
+        "number": 626,
+        "title": "i18n: Update Occitan locale",
+        "author": "Mejans",
+        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/626",
+        "final_score": 45,
+        "tier": "Needs info",
+        "reason": "Scored from rule checks only. Flagged: links issue, has description, touches tests.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": false,
+            "note": "Description is empty."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Repo has no PR template."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (135 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, Mejans! To help us review it, could you link the related issue (or open one to discuss the change); add a short description of what this changes and why; add or update a test that covers the change? Happy to take another look once that's in."
+      },
+      {
+        "number": 672,
+        "title": "locale: Update the Brazilian Portuguese translation",
+        "author": "cfgnunes",
+        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/672",
+        "final_score": 30,
+        "tier": "Likely low-effort",
+        "reason": "Scored from rule checks only. Flagged: links issue, has description, touches tests, returning contributor.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": false,
+            "note": "Description is very short."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Repo has no PR template."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (168 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, cfgnunes! To help us review it, could you link the related issue (or open one to discuss the change); add a short description of what this changes and why; add or update a test that covers the change? Happy to take another look once that's in."
+      },
+      {
+        "number": 473,
+        "title": "Adding es.po translation",
+        "author": "andreyadrian",
+        "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator/pull/473",
+        "final_score": 30,
+        "tier": "Likely low-effort",
+        "reason": "Scored from rule checks only. Flagged: links issue, has description, touches tests, returning contributor.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": false,
+            "note": "Description is empty."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Repo has no PR template."
+          },
+          "touches_tests": {
+            "passed": false,
+            "note": "No test files changed."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (140 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "Not checked (AI review unavailable)."
+        },
+        "draft_reply": "Thanks for the contribution, andreyadrian! To help us review it, could you link the related issue (or open one to discuss the change); add a short description of what this changes and why; add or update a test that covers the change? Happy to take another look once that's in."
+      }
+    ],
+    "_limit": 30
+  }
+}

@@ -1,7 +1,8 @@
 """PR Lifeguard - Streamlit frontend.
 
-Backend switch: set LIVE_BACKEND below to the module exposing triage() and history()
-(the real pipeline). If it can't be imported, the app falls back to the fake data in contract.py.
+Backend switch: USE_FAKE_DATA below. False uses pipeline.triage / pipeline.load_history (the real
+pipeline); True uses the fake data in contract.py. If the pipeline can't be imported, the app falls
+back to fake data and says so in the sidebar.
 
 Demo mode: every successful real triage is saved to demo_cache.json (keyed by repo). With demo mode
 on, a cached repo loads instantly (with a short fake progress animation); otherwise it runs normally.
@@ -19,12 +20,14 @@ import streamlit as st
 
 import contract
 
-LIVE_BACKEND = "pipeline"  # <- the one-line switch to the real backend
+USE_FAKE_DATA = False  # <- the one-line switch: True = sample data from contract.py, False = real pipeline
 
-try:
-    live = importlib.import_module(LIVE_BACKEND)
-except Exception:  # not written yet, or missing credentials
-    live = None
+live, LIVE_ERROR = None, None
+if not USE_FAKE_DATA:
+    try:
+        import pipeline as live
+    except Exception as e:  # missing dependency or credentials: say so instead of hiding it
+        live, LIVE_ERROR = None, str(e)
 
 REPO_RE = re.compile(r"^https?://github\.com/[\w.-]+/[\w.-]+/?$")
 DEMO_REPO = "https://github.com/pallets/flask"
@@ -35,7 +38,7 @@ def get_backend():
     """Return (triage, history): the live pipeline if importable, else the fake contract data."""
     if live is None:
         return contract.fake_triage, contract.fake_history
-    return live.triage, live.history
+    return live.triage, live.load_history
 
 
 def repo_key(url):
@@ -50,11 +53,22 @@ def read_cache():
         return {}
 
 
-def save_to_cache(url, result):
+def cache_covers(entry, limit):
+    """True if a cached result can answer a request for `limit` PRs.
+
+    The entry remembers the limit it was fetched with. If it came back full (as many PRs as the
+    limit), the repo may have more, so a bigger request must hit the live backend.
+    """
+    n = len(entry.get("prs", []))
+    fetched_with = entry.get("_limit", n)
+    return limit <= n or n < fetched_with
+
+
+def save_to_cache(url, result, limit):
     """Best-effort save; a cache failure must never break the demo."""
     try:
         cache = read_cache()
-        cache[repo_key(url)] = result
+        cache[repo_key(url)] = {**result, "_limit": limit}
         tmp = CACHE_PATH.with_suffix(".tmp")
         tmp.write_text(json.dumps(cache, indent=2))
         tmp.replace(CACHE_PATH)
@@ -249,7 +263,11 @@ with st.sidebar:
         help="Loads cached results instantly for repos triaged before, so the demo survives bad Wi-Fi "
              "and API rate limits. Repos not in the cache run normally.",
     )
-    st.caption(f"{len(cache)} repo(s) cached" + ("" if live else " | live pipeline not available, using sample data"))
+    st.caption(f"{len(cache)} repo(s) cached")
+    if USE_FAKE_DATA:
+        st.caption("Sample data mode (USE_FAKE_DATA = True)")
+    elif live is None:
+        st.error(f"Real pipeline failed to load, using sample data: {LIVE_ERROR}")
 triage, load_history = get_backend()
 
 tab_triage, tab_insights = st.tabs(["Triage", "Insights"])
@@ -260,7 +278,7 @@ with tab_triage:
         "GitHub repo URL", value=DEMO_REPO,
         placeholder="https://github.com/owner/name", label_visibility="collapsed",
     )
-    limit = c2.number_input("Max PRs", 1, 50, 10, label_visibility="collapsed")
+    limit = c2.number_input("Max PRs", 1, 100, 25, label_visibility="collapsed")
     go = st.button("Triage open PRs", type="primary", width="stretch")
 
     if go:
@@ -271,7 +289,7 @@ with tab_triage:
             bar = st.progress(0.0, text="Starting...")
             try:
                 key = repo_key(repo_url)
-                if demo and key in cache:
+                if demo and key in cache and cache_covers(cache[key], int(limit)):
                     st.session_state["result"] = replay_cached(cache[key], int(limit), bar)
                 else:
                     result = triage(
@@ -279,8 +297,8 @@ with tab_triage:
                     )
                     st.session_state["result"] = result
                     if live is not None and result.get("prs"):  # cache only real, non-empty results
-                        save_to_cache(repo_url, result)
-                        cache[key] = result
+                        save_to_cache(repo_url, result, int(limit))
+                        cache[key] = {**result, "_limit": int(limit)}
             except Exception as e:
                 st.error(
                     f"Triage didn't complete: {e}. This is often a network problem or a GitHub rate limit. "
