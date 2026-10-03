@@ -1,3 +1,7 @@
+🏆 Winner: Best Use of Snowflake at MLH Hacktoberfest Hack Day Tempe x sunhacks (ASU, Oct 2026)
+
+PR Lifeguard helps open-source maintainers triage pull requests by scoring each open PR on effort, using seven rule checks plus an open-weight LLM, and explaining every score. It drafts a kind reply for every PR and stores each result in Snowflake, which powers the Insights tab.
+
 # PR Lifeguard
 
 Open-source maintainers are drowning in low-effort pull requests. PR Lifeguard ranks a repo's open PRs by **effort**, not by whether AI was used, explains every score, and drafts a kind reply for each one.
@@ -96,5 +100,10 @@ cd web && npm run dev                                   # web app on :3000
 .venv/bin/python test_pipeline.py pallets/click 5       # live end-to-end contract check
 cd web && npm run lint && npm run build
 ```
+
+## Team
+
+- **Aayush Swami**: [github.com/aayushswami123](https://github.com/aayushswami123)
+- **Aryan Makhija**: [github.com/makhijaaryan](https://github.com/makhijaaryan)
 
 Built for Hacktoberfest Hack Day. A human always makes the final call; PR Lifeguard only drafts replies.
