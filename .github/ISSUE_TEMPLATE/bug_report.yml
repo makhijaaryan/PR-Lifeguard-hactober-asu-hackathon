@@ -1,0 +1,42 @@
+name: Bug report
+description: Something isn't working as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you saw, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run ./dev.sh
+        2. Turn Offline demo off and triage owner/repo
+        3. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options:
+        - Offline demo
+        - Live
+        - Streamlit backup (app.py)
+    validations:
+      required: true
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: OS, Python and Node versions, browser, LLM provider/model.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Relevant API or browser console output. Remove any keys or tokens first.
+      render: shell

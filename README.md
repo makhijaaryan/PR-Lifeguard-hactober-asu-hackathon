@@ -4,6 +4,8 @@ PR Lifeguard helps open-source maintainers triage pull requests by scoring each 
 
 # PR Lifeguard
 
+[![CI](https://github.com/makhijaaryan/hactober-asu-hackathon/actions/workflows/ci.yml/badge.svg)](https://github.com/makhijaaryan/hactober-asu-hackathon/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 Open-source maintainers are drowning in low-effort pull requests. PR Lifeguard ranks a repo's open PRs by **effort**, not by whether AI was used, explains every score, and drafts a kind reply for each one.
 
 **License: MIT** (see [LICENSE](LICENSE)) · Agent Skill: [`skills/pr-lifeguard/SKILL.md`](skills/pr-lifeguard/SKILL.md)
@@ -76,6 +78,9 @@ api/server.py   FastAPI wrapper around the Python pipeline (no scoring logic)
 pipeline.py     triage() / load_history(): the engine
 github_client.py, checks.py, scorer.py, llm.py, storage.py, contract.py
 app.py          the original Streamlit UI, kept as a backup
+tests/          test scripts (run with python -m tests.<name>)
+skills/         the scoring logic as an Agent Skill
+docs/           screenshots and the hackathon pitch (PITCH.md)
 ```
 
 The web app talks to the API at `http://localhost:8000` (override with `NEXT_PUBLIC_API_URL`). Live runs run the pipeline in a background thread and stream progress. Each successful live run is also saved to `demo_cache.json`, so it becomes available offline.
@@ -93,13 +98,18 @@ cd web && npm run dev                                   # web app on :3000
 ## Tests
 
 ```bash
-.venv/bin/python test_checks.py --offline
-.venv/bin/python test_scorer.py --offline
-.venv/bin/python test_storage.py
-.venv/bin/python test_github.py pallets/flask           # needs network
-.venv/bin/python test_pipeline.py pallets/click 5       # live end-to-end contract check
+# run from the repo root
+.venv/bin/python -m tests.test_checks --offline
+.venv/bin/python -m tests.test_scorer --offline
+.venv/bin/python -m tests.test_storage
+.venv/bin/python -m tests.test_github pallets/flask           # needs network
+.venv/bin/python -m tests.test_pipeline pallets/click 5       # live end-to-end contract check
 cd web && npm run lint && npm run build
 ```
+
+## Contributing
+
+Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) for setup and checks, and follow the [Code of Conduct](CODE_OF_CONDUCT.md). Report security issues privately as described in [SECURITY.md](SECURITY.md).
 
 ## Team
 
