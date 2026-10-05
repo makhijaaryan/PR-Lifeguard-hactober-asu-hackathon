@@ -2569,63 +2569,18 @@
   },
   "pallets/click": {
     "repo": "pallets/click",
-    "run_id": "4306c744c5d6",
-    "model_used": "openai/gpt-oss-120b",
+    "run_id": "967fb446dc91",
+    "model_used": "qwen/qwen3.8-27b",
     "storage_backend": "Snowflake",
     "prs": [
-      {
-        "number": 3827,
-        "title": "Require a parameter name to be a non-keyword Python identifier",
-        "author": "kdeldycke",
-        "url": "https://github.com/pallets/click/pull/3827",
-        "final_score": 98,
-        "tier": "Review first",
-        "reason": "The contributor provided a comprehensive description, detailed migration guide, CHANGES.md entry, extensive tests, and updated documentation to support the breaking API change.",
-        "rule_flags": {
-          "links_issue": {
-            "passed": true,
-            "note": "Links an issue."
-          },
-          "has_description": {
-            "passed": true,
-            "note": "Description provided."
-          },
-          "template_filled": {
-            "passed": true,
-            "note": "Template filled out."
-          },
-          "touches_tests": {
-            "passed": true,
-            "note": "Tests added or updated."
-          },
-          "size_ok": {
-            "passed": true,
-            "note": "Reasonably sized diff (769 lines)."
-          },
-          "account_age_ok": {
-            "passed": true,
-            "note": "Established account."
-          },
-          "returning_contributor": {
-            "passed": true,
-            "note": "Has prior contributions to this repo."
-          }
-        },
-        "guideline_issues": [],
-        "description_matches_code": {
-          "value": true,
-          "note": "The diff shows updates to CHANGES.md and docs/arguments.md that align with the description's summary of the behavioral changes and keyword handling."
-        },
-        "draft_reply": "Thank you for this thorough PR and the clear explanation of the breaking changes. The description and migration guide are excellent, and the test coverage looks solid. I will review the code logic closely to ensure the normalization behavior matches the previous deprecation cycle's intent before merging once we are ready for the 9.x cycle."
-      },
       {
         "number": 3880,
         "title": "Split `PAGER` and `EDITOR` with a Windows-specific `shlex` equivalent",
         "author": "kdeldycke",
         "url": "https://github.com/pallets/click/pull/3880",
-        "final_score": 90,
+        "final_score": 98,
         "tier": "Review first",
-        "reason": "The PR introduces a sizable new function, updates documentation, and adds tests.",
+        "reason": "The PR demonstrates deep understanding of platform-specific parsing differences, provides a thorough explanation in the description, and includes updated tests and changelog entries.",
         "rule_flags": {
           "links_issue": {
             "passed": true,
@@ -2659,18 +2614,245 @@
         "guideline_issues": [],
         "description_matches_code": {
           "value": true,
-          "note": "The changes implement the described Windows command splitting and update CHANGES accordingly."
+          "note": "The diff excerpt shows the new `_split_command_line` function in `_compat.py` and the corresponding CHANGES.md update, which aligns perfectly with the description's focus on implementing Windows-specific shlex splitting for PAGER/EDITOR."
         },
-        "draft_reply": "Thank you for the thorough contribution! The new Windows\u2011specific splitting logic and the accompanying tests look good. Could you add a short note to the documentation about this behavior and confirm it doesn't affect existing shell completion on non\u2011Windows platforms?"
+        "draft_reply": "Thank you for this detailed pull request and the clear explanation of the platform-specific parsing challenges. It is great to see the new helper function and its integration into the core modules. Please feel free to keep this as a draft until you have gathered the feedback you mentioned regarding the behavior limits."
+      },
+      {
+        "number": 3827,
+        "title": "Require a parameter name to be a non-keyword Python identifier",
+        "author": "kdeldycke",
+        "url": "https://github.com/pallets/click/pull/3827",
+        "final_score": 98,
+        "tier": "Review first",
+        "reason": "The PR is exceptionally well-documented with a detailed migration guide, context, comprehensive tests, and accurate changelog entries, demonstrating high effort and thoughtfulness.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (747 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [
+          "CHANGES.md lines in the diff excerpt appear to exceed the 80-character limit specified in the contributing guide."
+        ],
+        "description_matches_code": {
+          "value": true,
+          "note": "The description accurately summarizes the breaking changes and behavior updates that are reflected in the CHANGES.md and documentation updates visible in the diff excerpt."
+        },
+        "draft_reply": "Thank you for this comprehensive and well-documented PR. The migration guide and context provided are extremely helpful for maintaining clarity during this breaking change. I noticed that some lines in CHANGES.md exceed the 80-character limit mentioned in the contributing guide, so please consider wrapping them to align with our style guidelines before merging."
+      },
+      {
+        "number": 2784,
+        "title": "Allow adding dynamic parameters to every Context",
+        "author": "ofek",
+        "url": "https://github.com/pallets/click/pull/2784",
+        "final_score": 92,
+        "tier": "Review first",
+        "reason": "The PR fills out the checklist, updates the changelog with the correct issue link, and adds the necessary feature code and tests in a clean, focused manner.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (68 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The diff clearly shows the addition of the 'dynamic_params' attribute to the Context class and the corresponding entry in CHANGES.rst, which matches the PR description."
+        },
+        "draft_reply": "Thank you for this clean implementation! It looks like you have covered all the boxes in the checklist. I'll take a look at the logic for `make_dynamic_context` shortly."
+      },
+      {
+        "number": 3782,
+        "title": "Do not break usage line arguments at a hyphen",
+        "author": "fahadhewad",
+        "url": "https://github.com/pallets/click/pull/3782",
+        "final_score": 85,
+        "tier": "Review first",
+        "reason": "The PR adds a useful feature, updates documentation, and includes tests.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (77 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The description aligns with the changes shown in the diff."
+        },
+        "draft_reply": "Thank you for the contribution! This change adds the break_on_hyphens option, updates the changelog, and includes tests, which is great. Could you confirm that the new parameter is documented in the public API docs, or add a note if needed? Once that's done, we'll be ready to merge."
+      },
+      {
+        "number": 2880,
+        "title": "Add format customization flow to `click.prompt` and `click.confirm` via `PromptBuilder` class",
+        "author": "AdamPiotrowski91",
+        "url": "https://github.com/pallets/click/pull/2880",
+        "final_score": 85,
+        "tier": "Review first",
+        "reason": "The PR demonstrates high effort with a complete implementation including new class logic, documentation updates, changelog entries, and test coverage for a complex feature request.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": true,
+            "note": "Links an issue."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (177 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The visible diff confirms the addition of the PromptBuilder class to termui.py and updates to the API and prompt documentation, matching the description. A typo 'PrompBuilder' is visible in the CHANGES.rst diff."
+        },
+        "draft_reply": "Thank you for this detailed contribution and for addressing issue #2875. I noticed a small typo in the CHANGES.rst entry where 'PromptBuilder' is written as 'PrompBuilder'; could you please fix that? Other than that, the structure and documentation look solid, and I look forward to reviewing the rest of the implementation logic in termui.py."
+      },
+      {
+        "number": 3412,
+        "title": "Add pyrefly type checking.",
+        "author": "AndreasBackx",
+        "url": "https://github.com/pallets/click/pull/3412",
+        "final_score": 82,
+        "tier": "Review first",
+        "reason": "The PR implements a new type checker integration with CI configuration, dependency management, and source code adjustments, though it includes many low-priority fixes for the new tool.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": true,
+            "note": "Description provided."
+          },
+          "template_filled": {
+            "passed": true,
+            "note": "Template filled out."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Tests added or updated."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (398 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The description mentions adding pyrefly and fixing typing issues, which matches the dependency addition, CI workflow, and source changes seen in the diff."
+        },
+        "draft_reply": "Thanks for adding pyrefly support; this looks like a helpful addition for type checking consistency. Could you link the relevant issue discussing the type improvements or clarify the scope of the source changes? It would also be good to confirm if the `continue-on-error: true` setting is intentional for the initial rollout."
       },
       {
         "number": 3878,
-        "title": "Add `CliRunner.echo_stdin_class` to override the `<stdin>` echo wrapper",
+        "title": "Print `\\x04` and `\\x1a` input bytes as `^D` and `^Z` in `CliRunner`",
         "author": "kdeldycke",
         "url": "https://github.com/pallets/click/pull/3878",
-        "final_score": 80,
+        "final_score": 78,
         "tier": "Review first",
-        "reason": "The PR adds a new attribute with code, documentation, changelog, and tests, showing clear effort.",
+        "reason": "The PR adds meaningful functionality with documentation and tests, showing clear effort.",
         "rule_flags": {
           "links_issue": {
             "passed": false,
@@ -2690,7 +2872,7 @@
           },
           "size_ok": {
             "passed": true,
-            "note": "Reasonably sized diff (55 lines)."
+            "note": "Reasonably sized diff (118 lines)."
           },
           "account_age_ok": {
             "passed": true,
@@ -2702,22 +2884,22 @@
           }
         },
         "guideline_issues": [
-          "Missing linked issue in the PR description"
+          "No linked issue found."
         ],
         "description_matches_code": {
           "value": true,
-          "note": "The description of adding `CliRunner.echo_stdin_class` aligns with the diff changes."
+          "note": "The description of echo_stdin behavior matches the changes shown in the diff."
         },
-        "draft_reply": "Thank you for the contribution! The changes look solid and add useful functionality. Could you please link the related issue in the description so we can track it properly? Once that's added, we can move forward with reviewing."
+        "draft_reply": "Thank you for the contribution! The new echo_stdin behavior and accompanying documentation look great. Could you please link the related issue in the PR description so we can track it properly?"
       },
       {
-        "number": 3877,
-        "title": "Add `Parameter.spec` and deprecate `human_readable_name`",
-        "author": "kdeldycke",
-        "url": "https://github.com/pallets/click/pull/3877",
-        "final_score": 80,
+        "number": 2864,
+        "title": "Improve internationalization",
+        "author": "v--",
+        "url": "https://github.com/pallets/click/pull/2864",
+        "final_score": 72,
         "tier": "Review first",
-        "reason": "The PR introduces new functionality, updates documentation, and adds tests across multiple files.",
+        "reason": "The PR makes extensive changes across many files to add internationalization support.",
         "rule_flags": {
           "links_issue": {
             "passed": false,
@@ -2737,34 +2919,32 @@
           },
           "size_ok": {
             "passed": true,
-            "note": "Reasonably sized diff (292 lines)."
+            "note": "Reasonably sized diff (568 lines)."
           },
           "account_age_ok": {
             "passed": true,
             "note": "Established account."
           },
           "returning_contributor": {
-            "passed": true,
-            "note": "Has prior contributions to this repo."
+            "passed": false,
+            "note": "No earlier merged contributions found for this repo."
           }
         },
-        "guideline_issues": [
-          "No linked issue found"
-        ],
+        "guideline_issues": [],
         "description_matches_code": {
           "value": true,
-          "note": "Title and description correspond to the added spec attribute and deprecation changes visible in the diff."
+          "note": "The described additions of locale functions and translation files are reflected in the diff."
         },
-        "draft_reply": "Thank you for the detailed PR and for adding tests and documentation! Could you please link the relevant issue or provide a brief reference so we can track this change? Once that's added, we'll be able to move forward with review."
+        "draft_reply": "Thank you for the substantial contribution adding internationalization support to Click. Could you please link this PR to the relevant issue (e.g., #2706) so we can track it properly? Also, if there are any tests for the new locale functionality, that would be helpful. Great work overall!"
       },
       {
         "number": 3859,
         "title": "Add pyrefly type checking",
         "author": "MarcoGorelli",
         "url": "https://github.com/pallets/click/pull/3859",
-        "final_score": 58,
+        "final_score": 60,
         "tier": "Needs info",
-        "reason": "The PR adds configuration for pyrefly and makes minor type\u2011related code adjustments, showing moderate effort.",
+        "reason": "The PR adds several configuration changes and type hints, showing clear work.",
         "rule_flags": {
           "links_issue": {
             "passed": false,
@@ -2796,16 +2976,60 @@
           }
         },
         "guideline_issues": [
-          "Missing linked issue",
-          "No tests added"
+          "Add tests that demonstrate the behavior of the change."
         ],
         "description_matches_code": {
           "value": true,
-          "note": "The title and description about adding pyrefly type checking align with the added pyrefly config and type hint changes."
+          "note": "The diff adds pyrefly configuration and type hint updates matching the title."
         },
-        "draft_reply": "Thank you for the contribution! Could you please link the relevant issue or provide a brief description of the problem this addresses? Also, adding tests that demonstrate the new type\u2011checking behavior would help ensure everything works as expected."
+        "draft_reply": "Thank you for the contribution! Could you please add tests that cover the new type checking behavior and link the related issue in the description? This will help ensure the change is well verified."
+      },
+      {
+        "number": 3051,
+        "title": "WIP: Rough out the idea of reference tables for kwargs and situations",
+        "author": "Rowlando13",
+        "url": "https://github.com/pallets/click/pull/3051",
+        "final_score": 58,
+        "tier": "Needs info",
+        "reason": "Added substantial documentation files but PR lacks description and issue link.",
+        "rule_flags": {
+          "links_issue": {
+            "passed": false,
+            "note": "No linked issue found."
+          },
+          "has_description": {
+            "passed": false,
+            "note": "Description is empty."
+          },
+          "template_filled": {
+            "passed": false,
+            "note": "PR template left mostly blank."
+          },
+          "touches_tests": {
+            "passed": true,
+            "note": "Docs-only change, tests not expected."
+          },
+          "size_ok": {
+            "passed": true,
+            "note": "Reasonably sized diff (295 lines)."
+          },
+          "account_age_ok": {
+            "passed": true,
+            "note": "Established account."
+          },
+          "returning_contributor": {
+            "passed": true,
+            "note": "Has prior contributions to this repo."
+          }
+        },
+        "guideline_issues": [],
+        "description_matches_code": {
+          "value": true,
+          "note": "The title describes adding kwarg reference docs, which matches the added files."
+        },
+        "draft_reply": "Thank you for the documentation contribution! Could you please add a brief description of the changes and link a related issue or discussion? This will help reviewers understand the context. Once updated, we can proceed with the review."
       }
     ],
-    "_limit": 5
+    "_limit": 12
   }
 }
