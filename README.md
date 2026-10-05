@@ -10,6 +10,12 @@ Open-source maintainers are drowning in low-effort pull requests. PR Lifeguard r
 
 **License: MIT** (see [LICENSE](LICENSE)) · Agent Skill: [`skills/pr-lifeguard/SKILL.md`](skills/pr-lifeguard/SKILL.md)
 
+### Demo
+
+[![Watch the PR Lifeguard demo (76s)](docs/screenshots/demo-poster.jpg)](docs/pr-lifeguard-launch.mp4)
+
+*Click to watch the 76-second walkthrough.*
+
 ![Triage view](docs/screenshots/triage.jpg)
 
 | PR details and draft reply | Insights across runs |
